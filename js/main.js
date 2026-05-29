@@ -32,7 +32,35 @@
           document.body.style.overflow = '';
         });
       });
+
+      // Mobile dropdown toggle
+      var dropdownBtns = navLinks.querySelectorAll('.nav-dropdown-btn');
+      dropdownBtns.forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+          if (window.innerWidth <= 768) {
+            e.preventDefault();
+            var menu = this.nextElementSibling;
+            var isOpen = menu.classList.toggle('open');
+            // Close other open dropdowns
+            navLinks.querySelectorAll('.nav-dropdown-menu.open').forEach(function (m) {
+              if (m !== menu) m.classList.remove('open');
+            });
+          }
+        });
+      });
     }
+
+    // Close mobile dropdown when clicking anywhere else
+    document.addEventListener('click', function (e) {
+      if (window.innerWidth <= 768) {
+        var dd = e.target.closest('.nav-dropdown');
+        if (!dd) {
+          navLinks.querySelectorAll('.nav-dropdown-menu.open').forEach(function (m) {
+            m.classList.remove('open');
+          });
+        }
+      }
+    });
 
     // ==========================================================
     // 2. STICKY NAV — ADD 'SCROLLED' CLASS
