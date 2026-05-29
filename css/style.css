@@ -1,5 +1,5 @@
 /* ============================================================
-   Smart Elderly Care â€?B2B Export Website
+   Smart Elderly Care ï¿½?B2B Export Website
    Global Stylesheet
    ============================================================ */
 
@@ -272,6 +272,7 @@ ul, ol {
 .nav-links .btn {
   padding: 10px 24px;
   font-size: 0.9rem;
+  color: var(--color-white);
 }
 
 /* ============================================================
