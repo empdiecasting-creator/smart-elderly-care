@@ -269,10 +269,15 @@ ul, ol {
   color: var(--color-accent);
 }
 
+.nav-links .btn,
+.nav-links .btn:hover,
+.nav-links .btn-primary:hover {
+  color: var(--color-white);
+}
+
 .nav-links .btn {
   padding: 10px 24px;
   font-size: 0.9rem;
-  color: var(--color-white);
 }
 
 /* ============================================================
