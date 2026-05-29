@@ -139,19 +139,41 @@
         submitBtn.disabled = true;
         submitBtn.textContent = 'Sending...';
 
-        // Simulate form submission (frontend-only)
-        setTimeout(function () {
+        // Submit to Cloudflare Pages Function
+        fetch('/api/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        })
+        .then(function (response) {
+          return response.json().then(function (responseData) {
+            if (!response.ok) {
+              throw new Error(responseData.error || 'Submission failed');
+            }
+            return responseData;
+          });
+        })
+        .then(function (responseData) {
+          // Success
           contactForm.style.display = 'none';
-          const successEl = document.querySelector('.form-success');
+          var successEl = document.querySelector('.form-success');
           if (successEl) {
             successEl.classList.add('show');
           }
+        })
+        .catch(function (err) {
+          // Show error
           submitBtn.disabled = false;
           submitBtn.textContent = originalText;
+          var errorMsg = document.createElement('p');
+          errorMsg.className = 'form-error';
+          errorMsg.style.cssText = 'color: var(--color-error); font-size: 0.9rem; margin-top: 1rem; text-align: center;';
+          errorMsg.textContent = err.message + '. Please email us directly at export@smartelderlycare.com';
+          contactForm.appendChild(errorMsg);
+        });
 
-          // Reset form data (hidden)
-          contactForm.reset();
-        }, 1200);
+        // Reset form data (hidden)
+        contactForm.reset();
       });
     }
 

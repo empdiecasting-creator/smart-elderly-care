@@ -55,6 +55,11 @@
             <h2>Send Your Inquiry</h2>
 
             <form novalidate>
+              <!-- Honeypot: bots fill this, humans don't -->
+              <div style="position:absolute;left:-9999px" aria-hidden="true">
+                <label for="website">Website</label>
+                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+              </div>
               <div class="form-row">
                 <div class="form-group">
                   <label for="name">Full Name *</label>
