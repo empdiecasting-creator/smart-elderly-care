@@ -126,39 +126,50 @@
 
         if (!isValid) return;
 
-        // Collect form data
-        var formData = new FormData(contactForm);
-        var data = {};
-        formData.forEach(function (value, key) {
-          data[key] = value;
-        });
-
         // Show loading state
         var submitBtn = contactForm.querySelector('button[type="submit"]');
         var originalText = submitBtn.textContent;
         submitBtn.disabled = true;
         submitBtn.textContent = 'Sending...';
 
-        // Submit to Cloudflare Pages Function
-        fetch('/api/submit', {
+        // Collect form data
+        var formData = new FormData(contactForm);
+
+        // Set email subject based on selected product
+        var productValue = formData.get('product') || 'General';
+        formData.set('subject', 'New B2B Inquiry — ' + productValue);
+
+        // Check access key is configured
+        var accessKeyValue = formData.get('access_key');
+        if (!accessKeyValue || accessKeyValue === 'YOUR_ACCESS_KEY') {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText;
+          var errMsg = document.createElement('p');
+          errMsg.className = 'form-error';
+          errMsg.style.cssText = 'color: var(--color-error); font-size: 0.9rem; margin-top: 1rem; text-align: center;';
+          errMsg.textContent = 'Form not configured yet. Please email us at export@smartelderlycare.com';
+          contactForm.appendChild(errMsg);
+          return;
+        }
+
+        // Submit to Web3Forms
+        fetch('https://api.web3forms.com/submit', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(data)
+          body: formData
         })
         .then(function (response) {
-          return response.json().then(function (responseData) {
-            if (!response.ok) {
-              throw new Error(responseData.error || 'Submission failed');
-            }
-            return responseData;
-          });
+          return response.json();
         })
-        .then(function (responseData) {
-          // Success
-          contactForm.style.display = 'none';
-          var successEl = document.querySelector('.form-success');
-          if (successEl) {
-            successEl.classList.add('show');
+        .then(function (result) {
+          if (result.success) {
+            // Success
+            contactForm.style.display = 'none';
+            var successEl = document.querySelector('.form-success');
+            if (successEl) {
+              successEl.classList.add('show');
+            }
+          } else {
+            throw new Error(result.message || 'Submission failed');
           }
         })
         .catch(function (err) {

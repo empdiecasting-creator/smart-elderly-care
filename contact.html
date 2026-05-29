@@ -56,10 +56,16 @@
 
             <form novalidate>
               <!-- Honeypot: bots fill this, humans don't -->
+              <!-- Honeypot: bots fill this, humans don't -->
               <div style="position:absolute;left:-9999px" aria-hidden="true">
                 <label for="website">Website</label>
                 <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
               </div>
+              <!-- Web3Forms Access Key — replace with your key from https://web3forms.com -->
+              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
+              <input type="hidden" name="from_name" value="Smart Elderly Care Inquiry">
+              <!-- Redirect back to contact page with success flag -->
+              <input type="hidden" name="redirect" value="/contact.html?sent=success">
               <div class="form-row">
                 <div class="form-group">
                   <label for="name">Full Name *</label>
