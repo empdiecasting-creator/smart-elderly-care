@@ -1,293 +1,187 @@
 /* ============================================================
-   Smart Elderly Care — B2B Export Website
-   Main JavaScript
+   main.js — Global interactions
    ============================================================ */
 
 (function () {
   'use strict';
 
-  // --- DOM Ready ---
-  document.addEventListener('DOMContentLoaded', function () {
+  /* ==========================================================
+     Mobile Menu
+     ========================================================== */
 
-    // ==========================================================
-    // 1. MOBILE NAV TOGGLE
-    // ==========================================================
-    const navToggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const body = document.body;
 
-    if (navToggle && navLinks) {
-      navToggle.addEventListener('click', function () {
-        const isOpen = navLinks.classList.toggle('open');
-        navToggle.classList.toggle('active');
-        navToggle.setAttribute('aria-expanded', isOpen);
-        document.body.style.overflow = isOpen ? 'hidden' : '';
-      });
-
-      // Close nav on link click (mobile)
-      navLinks.querySelectorAll('a').forEach(function (link) {
-        link.addEventListener('click', function () {
-          navLinks.classList.remove('open');
-          navToggle.classList.remove('active');
-          navToggle.setAttribute('aria-expanded', 'false');
-          document.body.style.overflow = '';
-        });
-      });
-
-      // Mobile dropdown toggle
-      var dropdownBtns = navLinks.querySelectorAll('.nav-dropdown-btn');
-      dropdownBtns.forEach(function (btn) {
-        btn.addEventListener('click', function (e) {
-          if (window.innerWidth <= 768) {
-            e.preventDefault();
-            var menu = this.nextElementSibling;
-            var isOpen = menu.classList.toggle('open');
-            // Close other open dropdowns
-            navLinks.querySelectorAll('.nav-dropdown-menu.open').forEach(function (m) {
-              if (m !== menu) m.classList.remove('open');
-            });
-          }
-        });
-      });
-    }
-
-    // Close mobile dropdown when clicking anywhere else
-    document.addEventListener('click', function (e) {
-      if (window.innerWidth <= 768) {
-        var dd = e.target.closest('.nav-dropdown');
-        if (!dd) {
-          navLinks.querySelectorAll('.nav-dropdown-menu.open').forEach(function (m) {
-            m.classList.remove('open');
-          });
-        }
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', function () {
+      const isOpen = mobileMenu.classList.contains('mobile-menu--open');
+      if (isOpen) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
       }
     });
 
-    // ==========================================================
-    // 2. STICKY NAV — ADD 'SCROLLED' CLASS
-    // ==========================================================
-    const nav = document.querySelector('.nav');
-    let lastScrollY = 0;
-
-    if (nav) {
-      window.addEventListener('scroll', function () {
-        const scrollY = window.scrollY;
-        if (scrollY > 50) {
-          nav.classList.add('scrolled');
-        } else {
-          nav.classList.remove('scrolled');
-        }
-        lastScrollY = scrollY;
-      }, { passive: true });
-    }
-
-    // ==========================================================
-    // 3. SMOOTH SCROLL FOR ANCHOR LINKS
-    // ==========================================================
-    document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
-      anchor.addEventListener('click', function (e) {
-        const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
-        const targetEl = document.querySelector(targetId);
-        if (targetEl) {
-          e.preventDefault();
-          const navHeight = nav ? nav.offsetHeight : 72;
-          const targetPos = targetEl.getBoundingClientRect().top + window.pageYOffset - navHeight;
-          window.scrollTo({ top: targetPos, behavior: 'smooth' });
-        }
+    // Close on link click
+    mobileMenu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        closeMobileMenu();
       });
     });
 
-    // ==========================================================
-    // 4. CONTACT FORM HANDLER
-    // ==========================================================
-    const contactForm = document.querySelector('.contact-form form');
-    const formSuccess = document.querySelector('.form-success');
-
-    if (contactForm) {
-      // Pre-select product from URL parameter
-      const urlParams = new URLSearchParams(window.location.search);
-      const productParam = urlParams.get('product');
-      const productSelect = contactForm.querySelector('#product');
-      if (productSelect && productParam) {
-        const optionExists = Array.from(productSelect.options).some(function (opt) {
-          return opt.value === productParam;
-        });
-        if (optionExists) {
-          productSelect.value = productParam;
-        }
+    // Close on Escape
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && mobileMenu.classList.contains('mobile-menu--open')) {
+        closeMobileMenu();
       }
+    });
 
-      contactForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-
-        // Simple client-side validation
-        const name = contactForm.querySelector('#name');
-        const email = contactForm.querySelector('#email');
-        const company = contactForm.querySelector('#company');
-        let isValid = true;
-
-        // Reset errors
-        contactForm.querySelectorAll('.form-error').forEach(function (el) {
-          el.remove();
-        });
-        contactForm.querySelectorAll('.error').forEach(function (el) {
-          el.classList.remove('error');
-        });
-
-        if (name && !name.value.trim()) {
-          showError(name, 'Please enter your name');
-          isValid = false;
-        }
-
-        if (email && !email.value.trim()) {
-          showError(email, 'Please enter your email');
-          isValid = false;
-        } else if (email && !isValidEmail(email.value.trim())) {
-          showError(email, 'Please enter a valid email address');
-          isValid = false;
-        }
-
-        if (company && !company.value.trim()) {
-          showError(company, 'Please enter your company name');
-          isValid = false;
-        }
-
-        if (!isValid) return;
-
-        // Show loading state
-        var submitBtn = contactForm.querySelector('button[type="submit"]');
-        var originalText = submitBtn.textContent;
-        submitBtn.disabled = true;
-        submitBtn.textContent = 'Sending...';
-
-        // Collect form data (includes hidden access_key from HTML)
-        var formData = new FormData(contactForm);
-
-        // Set email subject based on selected product
-        var productValue = formData.get('product') || 'General';
-        formData.set('subject', 'New B2B Inquiry — ' + productValue);
-
-        // Submit to Web3Forms
-        fetch('https://api.web3forms.com/submit', {
-          method: 'POST',
-          body: formData
-        })
-        .then(function (response) {
-          return response.json();
-        })
-        .then(function (result) {
-          if (result.success) {
-            // Success
-            contactForm.style.display = 'none';
-            var successEl = document.querySelector('.form-success');
-            if (successEl) {
-              successEl.classList.add('show');
-            }
-          } else {
-            throw new Error(result.message || 'Submission failed');
-          }
-        })
-        .catch(function (err) {
-          // Show error
-          submitBtn.disabled = false;
-          submitBtn.textContent = originalText;
-          var errorMsg = document.createElement('p');
-          errorMsg.className = 'form-error';
-          errorMsg.style.cssText = 'color: var(--color-error); font-size: 0.9rem; margin-top: 1rem; text-align: center;';
-          errorMsg.textContent = err.message + '. Please email us directly at export@smartelderlycare.com';
-          contactForm.appendChild(errorMsg);
-        });
-
-        // Reset form data (hidden)
-        contactForm.reset();
+    // Mobile dropdown toggle
+    const dropdownToggle = mobileMenu.querySelector('.mobile-menu__dropdown-toggle');
+    const submenu = mobileMenu.querySelector('.mobile-menu__submenu');
+    if (dropdownToggle && submenu) {
+      dropdownToggle.addEventListener('click', function () {
+        const isSubOpen = submenu.classList.contains('mobile-menu__submenu--open');
+        submenu.classList.toggle('mobile-menu__submenu--open', !isSubOpen);
+        dropdownToggle.classList.toggle('mobile-menu__dropdown-toggle--open', !isSubOpen);
       });
     }
-
-    // ==========================================================
-    // 5. SCROLL REVEAL ANIMATION
-    // ==========================================================
-    const revealElements = document.querySelectorAll('.reveal');
-
-    if (revealElements.length > 0 && 'IntersectionObserver' in window) {
-      const revealObserver = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('revealed');
-            revealObserver.unobserve(entry.target);
-          }
-        });
-      }, {
-        threshold: 0.15,
-        rootMargin: '0px 0px -50px 0px'
-      });
-
-      revealElements.forEach(function (el) {
-        revealObserver.observe(el);
-      });
-    } else {
-      // Fallback: just reveal everything
-      revealElements.forEach(function (el) {
-        el.classList.add('revealed');
-      });
-    }
-
-    // ==========================================================
-    // 6. COUNTER ANIMATION (hero stats, about stats)
-    // ==========================================================
-    const counters = document.querySelectorAll('.animate-counter');
-
-    if (counters.length > 0 && 'IntersectionObserver' in window) {
-      const counterObserver = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            const el = entry.target;
-            const target = parseInt(el.getAttribute('data-target'), 10) || 0;
-            const duration = 2000;
-            const startTime = performance.now();
-
-            function updateCounter(currentTime) {
-              const elapsed = currentTime - startTime;
-              const progress = Math.min(elapsed / duration, 1);
-              // Ease-out cubic
-              const eased = 1 - Math.pow(1 - progress, 3);
-              const current = Math.floor(eased * target);
-              el.textContent = current.toLocaleString();
-
-              if (progress < 1) {
-                requestAnimationFrame(updateCounter);
-              } else {
-                el.textContent = target.toLocaleString();
-              }
-            }
-
-            requestAnimationFrame(updateCounter);
-            counterObserver.unobserve(el);
-          }
-        });
-      }, { threshold: 0.5 });
-
-      counters.forEach(function (el) {
-        counterObserver.observe(el);
-      });
-    }
-
-  }); // end DOMContentLoaded
-
-  // ============================================================
-  // HELPERS
-  // ============================================================
-
-  function isValidEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
 
-  function showError(inputEl, message) {
-    inputEl.classList.add('error');
-    var error = document.createElement('p');
-    error.className = 'form-error';
-    error.style.cssText = 'color: var(--color-error, #f56565); font-size: 0.8rem; margin-top: 4px;';
-    error.textContent = message;
-    inputEl.parentNode.appendChild(error);
+  function openMobileMenu() {
+    mobileMenu.classList.add('mobile-menu--open');
+    hamburger.classList.add('hamburger--open');
+    body.style.overflow = 'hidden';
   }
 
+  function closeMobileMenu() {
+    mobileMenu.classList.remove('mobile-menu--open');
+    hamburger.classList.remove('hamburger--open');
+    body.style.overflow = '';
+  }
+
+  /* ==========================================================
+     Sticky Header Shadow
+     ========================================================== */
+
+  const siteHeader = document.querySelector('.site-header');
+  if (siteHeader) {
+    const observer = new IntersectionObserver(
+      function ([entry]) {
+        siteHeader.classList.toggle('site-header--scrolled', !entry.isIntersecting);
+      },
+      { threshold: 0 }
+    );
+
+    // Observe a sentinel element at the very top of the page
+    const sentinel = document.createElement('div');
+    sentinel.style.position = 'absolute';
+    sentinel.style.top = '0';
+    sentinel.style.height = '1px';
+    sentinel.style.width = '100%';
+    sentinel.style.pointerEvents = 'none';
+    document.body.prepend(sentinel);
+    observer.observe(sentinel);
+  }
+
+  /* ==========================================================
+     Back to Top Button
+     ========================================================== */
+
+  const backToTop = document.querySelector('.back-to-top');
+  if (backToTop) {
+    const btObserver = new IntersectionObserver(
+      function ([entry]) {
+        backToTop.classList.toggle('back-to-top--visible', !entry.isIntersecting);
+      },
+      { threshold: 0 }
+    );
+
+    const topSentinel = document.createElement('div');
+    topSentinel.style.position = 'absolute';
+    topSentinel.style.top = '400px';
+    topSentinel.style.height = '1px';
+    topSentinel.style.width = '100%';
+    topSentinel.style.pointerEvents = 'none';
+    document.body.prepend(topSentinel);
+    btObserver.observe(topSentinel);
+
+    backToTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  /* ==========================================================
+     Active Nav Highlighting
+     ========================================================== */
+
+  const currentPath = window.location.pathname;
+  const navLinks = document.querySelectorAll('.nav__link');
+  navLinks.forEach(function (link) {
+    const href = link.getAttribute('href');
+    if (href && currentPath.endsWith(href)) {
+      link.classList.add('nav__link--active');
+    }
+    // Also highlight the dropdown toggle if a child is active
+    if (href && currentPath.includes('/solutions/') && href.includes('solutions')) {
+      link.classList.add('nav__link--active');
+    }
+  });
+
+  /* ==========================================================
+     Scroll Reveal Animations
+     ========================================================== */
+
+  const revealElements = document.querySelectorAll('.reveal');
+  const revealStaggerContainers = document.querySelectorAll('.reveal-stagger');
+
+  if (revealElements.length > 0 || revealStaggerContainers.length > 0) {
+    const revealObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            if (entry.target.classList.contains('reveal-stagger')) {
+              entry.target.classList.add('reveal-stagger--visible');
+            } else {
+              entry.target.classList.add('reveal--visible');
+            }
+            // Optionally unobserve after reveal for performance
+            // revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+
+    revealElements.forEach(function (el) {
+      revealObserver.observe(el);
+    });
+
+    revealStaggerContainers.forEach(function (el) {
+      revealObserver.observe(el);
+    });
+  }
+
+  /* ==========================================================
+     Reading Time Estimator (for blog pages)
+     ========================================================== */
+
+  const articleBody = document.querySelector('.article-body');
+  const readingTimeEl = document.querySelector('[data-reading-time]');
+  if (articleBody && readingTimeEl) {
+    const text = articleBody.textContent;
+    const wordCount = text.split(/\s+/).filter(Boolean).length;
+    const readingTime = Math.max(1, Math.ceil(wordCount / 200)); // 200 wpm
+    readingTimeEl.textContent = readingTime + ' min read';
+  }
+
+  /* ==========================================================
+     Current Year (for copyright)
+     ========================================================== */
+
+  const yearEl = document.querySelector('[data-current-year]');
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
 })();

@@ -1,0 +1,144 @@
+/* ============================================================
+   Responsive Overrides — Mobile-first, breakpoints add complexity
+   ============================================================ */
+
+/* ---- Tablet: 768px+ ---- */
+@media (min-width: 768px) {
+
+  /* Navigation: already handled in header.css */
+
+  /* Product grid: already handled in layout.css (grid--2, grid--3, grid--4) */
+
+  /* Stat grid */
+  .stat-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Benefits list goes 2-column on tablet */
+  .benefits-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Blog grid */
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Page hero: reduce padding on tablet */
+  .page-hero {
+    padding-block: var(--space-20) var(--space-12);
+  }
+
+  /* Section spacing: reduce slightly on larger screens */
+  .section {
+    padding-block: var(--space-24);
+  }
+
+  .section--sm {
+    padding-block: var(--space-16);
+  }
+
+  /* CTA section */
+  .cta-section {
+    padding: var(--space-20) var(--space-12);
+  }
+
+  /* Product card image: taller on larger screens */
+  .product-card__image {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+/* ---- Desktop: 1024px+ ---- */
+@media (min-width: 1024px) {
+
+  /* Benefits: 2 columns */
+  .benefits-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Spec table: wider labels */
+  .specs-table__row {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  /* Section spacing: back to full */
+  .section {
+    padding-block: var(--section-y);
+  }
+
+  .section--sm {
+    padding-block: var(--section-y-sm);
+  }
+
+  /* Page hero */
+  .page-hero {
+    padding-block: var(--space-24) var(--space-16);
+  }
+
+  /* CTA */
+  .cta-section {
+    padding: var(--space-24) var(--space-16);
+  }
+
+  /* Typography: headings get bigger */
+  .page-hero__title {
+    max-width: 780px;
+  }
+
+  /* Blog article: wider reading area */
+  .article-body .content-width {
+    max-width: 720px;
+  }
+}
+
+/* ---- Wide: 1280px+ ---- */
+@media (min-width: 1280px) {
+
+  /* Extra breathing room */
+  .container {
+    max-width: 1280px;
+  }
+
+  .section {
+    padding-block: var(--section-y);
+  }
+
+  /* Product cards: larger images */
+  .product-card__image {
+    aspect-ratio: 3 / 2;
+  }
+
+  /* Blog hero bigger */
+  .blog-hero {
+    padding-block: var(--space-32) var(--space-20);
+  }
+}
+
+/* ---- Print Styles ---- */
+@media print {
+  .site-header,
+  .site-footer,
+  .back-to-top,
+  .hamburger,
+  .mobile-menu,
+  .cta-section {
+    display: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    color: #000;
+    background: #fff;
+  }
+
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  .page-hero {
+    padding: 1cm 0;
+    border-bottom: 1px solid #ccc;
+  }
+}
