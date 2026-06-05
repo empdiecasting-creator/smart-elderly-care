@@ -1,0 +1,1331 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e8]:
+    - link [ref=e9] [cursor=pointer]:
+      - /url: https://www.1688.com?spm=a261y.7663282.topmenu.logo
+      - img [ref=e10]
+    - generic [ref=e1180]:
+      - generic [ref=e1181]:
+        - generic [ref=e1184]:
+          - generic [ref=e1185]: 找本店
+          - generic [ref=e1186]: 
+        - generic [ref=e1189]:
+          - generic [ref=e1191] [cursor=pointer]: 搜 索
+          - textbox "搜索关键词搜本店商品" [ref=e1193]
+      - generic [ref=e1195]:
+        - generic [ref=e1196] [cursor=pointer]:
+          - button "Choose File" [ref=e1197]
+          - generic [ref=e1199]: 以图搜款
+        - generic:
+          - generic: 支持如下图搜同款比价方式
+          - generic [ref=e1200]: 1. 点击从本地上传图片
+          - generic [ref=e1201]: 2. ctrl + v 粘贴图片或图片链接快速图搜
+          - generic [ref=e1202]:
+            - text: 3. 安装1688插件，全网截图比价
+            - link "去安装" [ref=e1203] [cursor=pointer]:
+              - /url: https://air.1688.com/kapp/assets-group/haobangshou/PluginInstall
+    - generic [ref=e14]:
+      - link " 首页 首页" [ref=e17] [cursor=pointer]:
+        - /url: https://www.1688.com?spm=a261y.7663282.topmenu.dhome&spm=a261y.7663282.topmenu.dhome
+        - generic [ref=e19]: 
+        - generic [ref=e21]:
+          - text: 首页
+          - generic [ref=e22]: 首页
+      - generic [ref=e24]:
+        - link " 我的阿里 我的阿里" [ref=e26] [cursor=pointer]:
+          - /url: https://work.1688.com/home/buyer.htm?spm=a261y.7663282.topmenu.dmyali
+          - generic [ref=e28]: 
+          - generic [ref=e30]:
+            - text: 我的阿里
+            - generic [ref=e31]: 我的阿里
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - link "买家中心 买家中心":
+                    - /url: https://work.1688.com/home/buyer.htm?spm=a261y.7663282.topmenu.dmyali_popupdmaijiazhongxin
+                    - generic:
+                      - text: 买家中心
+                      - generic: 买家中心
+                - generic:
+                  - link "收藏的商品 收藏的商品":
+                    - /url: https://purchase.1688.com/favorites/favorite_offer.htm?spm=a261y.7663282.topmenu.dmyali_popupdshoucangdeshangpin
+                    - generic:
+                      - text: 收藏的商品
+                      - generic: 收藏的商品
+                - generic:
+                  - link "收藏的店铺 收藏的店铺":
+                    - /url: https://purchase.1688.com/favorites/favorite_shop.htm?spm=a261y.7663282.topmenu.dmyali_popupdshoucangdedianpu
+                    - generic:
+                      - text: 收藏的店铺
+                      - generic: 收藏的店铺
+                - generic:
+                  - link "浏览足迹 浏览足迹":
+                    - /url: https://purchase.1688.com/favorites/footprint.htm?spm=a261y.7663282.topmenu.dmyali_popupdliulanzuji
+                    - generic:
+                      - text: 浏览足迹
+                      - generic: 浏览足迹
+      - generic [ref=e35] [cursor=pointer]:
+        - generic [ref=e37]: 
+        - generic [ref=e39]:
+          - text: 下载插件
+          - generic [ref=e40]: 下载插件
+      - link " 我的订单 我的订单" [ref=e44] [cursor=pointer]:
+        - /url: https://trade.1688.com/order/buyer_order_list.htm?spm=a261y.7663282.topmenu.dmyorder&tradeStatus=waitbuyerreceive
+        - generic [ref=e46]: 
+        - generic [ref=e48]:
+          - text: 我的订单
+          - generic [ref=e49]: 我的订单
+      - link " 采购车 采购车" [ref=e53] [cursor=pointer]:
+        - /url: https://cart.1688.com/cart.htm?spm=a261y.7663282.topmenu.dcart
+        - generic [ref=e55]: 
+        - generic [ref=e57]:
+          - text: 采购车
+          - generic [ref=e58]: 采购车
+      - generic [ref=e60]:
+        - link " 消息 消息" [ref=e62] [cursor=pointer]:
+          - /url: https://air.1688.com/app/ocms-fusion-components-1688/def_cbu_web_im/index.html?spm=a261y.7663282.topmenu.dmymessage
+          - generic [ref=e64]: 
+          - generic [ref=e66]:
+            - text: 消息
+            - generic [ref=e67]: 消息
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - link "旺旺消息 旺旺消息":
+                    - /url: https://air.1688.com/app/ocms-fusion-components-1688/def_cbu_web_im/index.html?spm=a261y.7663282.topmenu.dmymessage_popup_dwangwangxiaoxi
+                    - generic:
+                      - text: 旺旺消息
+                      - generic: 旺旺消息
+                - generic:
+                  - link "系统消息 系统消息":
+                    - /url: https://systemjs.1688.com/krump/schema/2152.html?spm=a261y.7663282.topmenu.dmymessage_popup_dxitongxiaoxi
+                    - generic:
+                      - text: 系统消息
+                      - generic: 系统消息
+      - generic [ref=e69]:
+        - link " 开店 官方服务 官方服务" [ref=e71] [cursor=pointer]:
+          - /url: https://work.1688.com/home/seller.htm?spm=a261y.7663282.topmenu.dsellercenterentry
+          - generic [ref=e72]:
+            - generic [ref=e73]: 
+            - generic [ref=e74]: 开店
+          - generic [ref=e76]:
+            - text: 官方服务
+            - generic [ref=e77]: 官方服务
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - link "商家工作台 商家工作台":
+                    - /url: https://work.1688.com/home/seller.htm?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dsellercenter
+                    - generic:
+                      - text: 商家工作台
+                      - generic: 商家工作台
+                  - generic:
+                    - link "已卖出货品 已卖出货品":
+                      - /url: https://work.1688.com/app/saleList.htm?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dsellercenter_ymchw
+                      - generic:
+                        - text: 已卖出货品
+                        - generic: 已卖出货品
+                    - link "发布供应产品 发布供应产品":
+                      - /url: https://offer-new.1688.com/select.htm?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dsellercenter_fbgysp
+                      - generic:
+                        - text: 发布供应产品
+                        - generic: 发布供应产品
+                    - link "管理供应产品 管理供应产品":
+                      - /url: https://work.1688.com/app/orderManage.htm?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dsellercenter_glygysp
+                      - generic:
+                        - text: 管理供应产品
+                        - generic: 管理供应产品
+                    - link "管理旺铺 管理旺铺":
+                      - /url: https://apps.1688.com/page/freewinportopen.htm?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dsellercenter_glwp
+                      - generic:
+                        - text: 管理旺铺
+                        - generic: 管理旺铺
+                    - link "分销精选货源 分销精选货源":
+                      - /url: https://sale.1688.com/sale/distribution/d/dztvo8i2.html?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dsellercenter_fxjhy&__pageId__=235433&cms_id=235433&wh_pha=true
+                      - generic:
+                        - text: 分销精选货源
+                        - generic: 分销精选货源
+                - generic:
+                  - link "诚信通 诚信通":
+                    - /url: https://cxt.1688.com/?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dcxt
+                    - generic:
+                      - text: 诚信通
+                      - generic: 诚信通
+                  - generic:
+                    - link "新商入驻 新商入驻":
+                      - /url: https://cxt.1688.com/tp_service.html?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dcxt_ljkd
+                      - generic:
+                        - text: 新商入驻
+                        - generic: 新商入驻
+                    - link "我要续约 我要续约":
+                      - /url: https://cxt.1688.com/tp_service.html?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dcxt_lhyxf
+                      - generic:
+                        - text: 我要续约
+                        - generic: 我要续约
+                    - link "我的诚信通 我的诚信通":
+                      - /url: https://cxt.1688.com/myTrustpass.html?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dcxt_my&activityMenu=renew
+                      - generic:
+                        - text: 我的诚信通
+                        - generic: 我的诚信通
+                    - link "数字小店 数字小店":
+                      - /url: https://air.1688.com/kapp/Dior-site/dior-digital-shop-site/index?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dcxt_szxd&isIframe=&fromCode=MTAwMTU0&__removesafearea__=1&__existtitle__=1
+                      - generic:
+                        - text: 数字小店
+                        - generic: 数字小店
+                - generic:
+                  - link "源头旗舰 源头旗舰":
+                    - /url: https://shili.1688.com/page/60e53e91.html?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dslsj
+                    - generic:
+                      - text: 源头旗舰
+                      - generic: 源头旗舰
+                  - generic:
+                    - link "新商入驻 新商入驻":
+                      - /url: https://air.1688.com/app/tp-modules/joint-order-process/shili-enroll.html?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dslsj_xsrz
+                      - generic:
+                        - text: 新商入驻
+                        - generic: 新商入驻
+                    - link "我要续约 我要续约":
+                      - /url: https://air.1688.com/app/tp-modules/joint-order-process/shili-enroll.html?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dslsj_wyxy
+                      - generic:
+                        - text: 我要续约
+                        - generic: 我要续约
+                    - link "商家权益 商家权益":
+                      - /url: https://shili.1688.com/page/qyjsym.html?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dslsj_sjqy
+                      - generic:
+                        - text: 商家权益
+                        - generic: 商家权益
+                    - link "入驻标准 入驻标准":
+                      - /url: https://shili.1688.com/page/zhaoshangbiaozhun.html?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dslsj_rzbz
+                      - generic:
+                        - text: 入驻标准
+                        - generic: 入驻标准
+                    - link "成功案例 成功案例":
+                      - /url: https://shili.1688.com/zhaoshang/cgalPC.html?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dslsj_cgal
+                      - generic:
+                        - text: 成功案例
+                        - generic: 成功案例
+                    - link "商家中心 商家中心":
+                      - /url: https://peixun.1688.com/space/shili?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dslsj_xlzx
+                      - generic:
+                        - text: 商家中心
+                        - generic: 商家中心
+                - generic:
+                  - link "超级工厂 超级工厂":
+                    - /url: https://chaojigongchang.1688.com/superfactory/official/index.html?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dcjgc
+                    - generic:
+                      - text: 超级工厂
+                      - generic: 超级工厂
+                  - generic:
+                    - link "新商入驻 新商入驻":
+                      - /url: https://shili.1688.com/dpl/shili-enroll/index.html?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dcjgc_xsrz&pmMode=local
+                      - generic:
+                        - text: 新商入驻
+                        - generic: 新商入驻
+                    - link "我要续约 我要续约":
+                      - /url: https://shili.1688.com/dpl/shili-enroll/index.html?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dcjgc_wyxy&pmMode=local
+                      - generic:
+                        - text: 我要续约
+                        - generic: 我要续约
+                    - link "商家权益 商家权益":
+                      - /url: https://chaojigongchang.1688.com/superfactory/official/quanyi.html?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dcjgc_sjqy&__pageId__=225747&cms_id=225747
+                      - generic:
+                        - text: 商家权益
+                        - generic: 商家权益
+                    - link "入驻标准 入驻标准":
+                      - /url: https://chaojigongchang.1688.com/superfactory/official/biaozhun.html?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dcjgc_rzbz&&__pageId__=225749&cms_id=225749
+                      - generic:
+                        - text: 入驻标准
+                        - generic: 入驻标准
+                    - link "生意增长计划 生意增长计划":
+                      - /url: https://mindx.1688.com/default/default/jbp/index.html?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dcjgc_csjh&wh_pha=true&wh_pid=4048102
+                      - generic:
+                        - text: 生意增长计划
+                        - generic: 生意增长计划
+                    - link "商家中心 商家中心":
+                      - /url: https://peixun.1688.com/cms/cjgcxy.html?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dcjgc_xlzx
+                      - generic:
+                        - text: 商家中心
+                        - generic: 商家中心
+                - generic:
+                  - link "服务 服务":
+                    - /url: https://fuwu.1688.com/?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dfw&tracelog=yyfw_from_syma
+                    - generic:
+                      - text: 服务
+                      - generic: 服务
+                  - generic:
+                    - link "我要开店 我要开店":
+                      - /url: https://cxt.1688.com/tp_service.html?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dfw_0ykd&_source_=MTAwMzYx
+                      - generic:
+                        - text: 我要开店
+                        - generic: 我要开店
+                    - link "开店装修 开店装修":
+                      - /url: https://jz.1688.com/template/homepage/index.htm?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dfw_kdzx&tracelog=yyfw_from_jz
+                      - generic:
+                        - text: 开店装修
+                        - generic: 开店装修
+                    - link "AI查企 AI查企":
+                      - /url: https://air.1688.com/kapp/88cha-fe/88cha-site-pc/search?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dfw_aicq
+                      - generic:
+                        - text: AI查企
+                        - generic: AI查企
+                    - link "应用工具 应用工具":
+                      - /url: https://app.1688.com/?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dfw_yygj&tracelog=cn-oop-index-to-app
+                      - generic:
+                        - text: 应用工具
+                        - generic: 应用工具
+                    - link "运营服务 运营服务":
+                      - /url: https://yy.1688.com/?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dfw_yyfw&tracelog=yyfw_from_yingyun
+                      - generic:
+                        - text: 运营服务
+                        - generic: 运营服务
+                    - link "综合服务 综合服务":
+                      - /url: https://fuwu.1688.com/general-service.html?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dfw_zhfw&tracelog=yyfw_from_zonghe
+                      - generic:
+                        - text: 综合服务
+                        - generic: 综合服务
+                    - link "帮助中心 帮助中心":
+                      - /url: https://help.1688.com/page/home?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dfw_bzzx&spm=a2633h.13192815.0.0.4f977140wT8iqv&pageId=7&language=zh
+                      - generic:
+                        - text: 帮助中心
+                        - generic: 帮助中心
+                    - link "1688百科 1688百科":
+                      - /url: https://wiki.1688.com/?spm=a261y.7663282.topmenu.dsellercenterentry_popup_dfw_wiki
+                      - generic:
+                        - text: 1688百科
+                        - generic: 1688百科
+    - generic [ref=e79]:
+      - generic [ref=e81] [cursor=pointer]:
+        - text: 登录
+        - generic [ref=e82]: 登录
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - text: 登录之后可以
+                - generic: 登录之后可以
+              - generic:
+                - generic: 
+                - generic:
+                  - text: 搜索推荐更精准
+                  - generic: 搜索推荐更精准
+              - generic:
+                - generic: 
+                - generic:
+                  - text: 履约信息更及时
+                  - generic: 履约信息更及时
+              - generic:
+                - generic: 
+                - generic:
+                  - text: 商品详情更清晰
+                  - generic: 商品详情更清晰
+              - generic:
+                - generic:
+                  - text: 立即登录
+                  - generic: 立即登录
+  - generic [ref=e83]:
+    - generic [ref=e84]:
+      - generic [ref=e85]:
+        - link "潮州市潮安区彩塘镇元利五金制品厂 关注图标 关注 客服 全部商品 商品 入驻4年 主营：厨卫五金 店铺回头率 45% 店铺服务分 4.5分 准时发货率 98% 店铺好评率 99.1%" [ref=e88] [cursor=pointer]:
+          - /url: https://shop7p2d38l743662.1688.com?offerId=722104677326&td_page_id=PC-UNLOGIN-DEFAULT-2025
+          - generic [ref=e89]:
+            - link "潮州市潮安区彩塘镇元利五金制品厂" [ref=e90]:
+              - /url: https://shop7p2d38l743662.1688.com?offerId=722104677326&td_page_id=PC-UNLOGIN-DEFAULT-2025
+              - heading "潮州市潮安区彩塘镇元利五金制品厂" [level=1] [ref=e91]
+            - generic [ref=e93]:
+              - img "关注图标" [ref=e94]
+              - generic [ref=e96]:
+                - generic: 关注
+            - generic [ref=e97]:
+              - img [ref=e98]
+              - generic [ref=e100]:
+                - generic: 客服
+            - link "全部商品 商品" [ref=e101]:
+              - /url: https://shop7p2d38l743662.1688.com/page/offerlist.htm?offerId=722104677326&td_page_id=PC-UNLOGIN-DEFAULT-2025
+              - img "全部商品" [ref=e102]
+              - generic [ref=e104]:
+                - generic: 商品
+          - generic [ref=e105]:
+            - generic [ref=e106]: 入驻4年
+            - generic [ref=e107]: 主营：厨卫五金
+          - generic [ref=e108]:
+            - generic [ref=e109]:
+              - generic [ref=e110]: 店铺回头率
+              - generic [ref=e111]: 45%
+            - generic [ref=e112]:
+              - generic [ref=e113]: 店铺服务分
+              - generic [ref=e114]: 4.5分
+            - generic [ref=e115]:
+              - generic [ref=e116]: 准时发货率
+              - generic [ref=e117]: 98%
+            - generic [ref=e118]:
+              - generic [ref=e119]: 店铺好评率
+              - generic [ref=e120]: 99.1%
+        - generic [ref=e122]:
+          - list [ref=e125]:
+            - listitem [ref=e126]:
+              - generic [ref=e128]:
+                - button "start" [ref=e131]:
+                  - generic [ref=e132]: start
+                - generic [ref=e133]:
+                  - button "Play" [ref=e134]:
+                    - generic [ref=e135]: Play
+                  - generic [ref=e137]:
+                    - emphasis [ref=e139]: 00:00
+                    - emphasis [ref=e143]: 00:37
+                  - button [ref=e149]
+              - generic [ref=e150]: 主图视频
+            - listitem [ref=e151]:
+              - img [ref=e153]
+            - listitem [ref=e154]:
+              - img [ref=e156]
+            - listitem [ref=e157]:
+              - img [ref=e159]
+            - listitem [ref=e160]:
+              - img [ref=e162]
+            - listitem [ref=e163]:
+              - img [ref=e165]
+            - listitem [ref=e166]:
+              - generic [ref=e167]:
+                - list [ref=e168]:
+                  - listitem [ref=e169]:
+                    - paragraph [ref=e170]: 材质
+                    - paragraph [ref=e171]: 不锈钢
+                  - listitem [ref=e172]:
+                    - paragraph [ref=e173]: 表面处理
+                    - paragraph [ref=e174]: 抛光
+                  - listitem [ref=e175]:
+                    - paragraph [ref=e176]: 风格
+                    - paragraph [ref=e177]: 现代简约
+                  - listitem [ref=e178]:
+                    - paragraph [ref=e179]: 认证
+                    - paragraph [ref=e180]: 无
+                - table [ref=e187]:
+                  - rowgroup [ref=e189]:
+                    - row "品牌 凯凯" [ref=e190]:
+                      - cell "品牌" [ref=e191]
+                      - cell "凯凯" [ref=e192]:
+                        - generic [ref=e193]: 凯凯
+                    - row "承重 300" [ref=e194]:
+                      - cell "承重" [ref=e195]
+                      - cell "300" [ref=e196]:
+                        - generic [ref=e197]: "300"
+                    - row "是否一般纳税人 是" [ref=e198]:
+                      - cell "是否一般纳税人" [ref=e199]
+                      - cell "是" [ref=e200]:
+                        - generic [ref=e201]: 是
+                    - row "货号 608" [ref=e202]:
+                      - cell "货号" [ref=e203]
+                      - cell "608" [ref=e204]:
+                        - generic [ref=e205]: "608"
+                    - row "尺寸 201#25*300亮光、201#25*400亮光、201#25*500亮光、201#25*600亮光、304#25*300亮光、304#25*400亮光、304#25*500亮光、304#25*600亮光、201#25*300黑色、201#25*400黑色、201#25*500黑色、201#25*600黑色、304#25*300黑色、304#25*400黑色、304#25*500黑色、304#25*600黑色、304#25*300黄色、304#25*400黄色、304#25*500黄色、304#25*600黄色" [ref=e206]:
+                      - cell "尺寸" [ref=e207]
+                      - cell "201#25*300亮光、201#25*400亮光、201#25*500亮光、201#25*600亮光、304#25*300亮光、304#25*400亮光、304#25*500亮光、304#25*600亮光、201#25*300黑色、201#25*400黑色、201#25*500黑色、201#25*600黑色、304#25*300黑色、304#25*400黑色、304#25*500黑色、304#25*600黑色、304#25*300黄色、304#25*400黄色、304#25*500黄色、304#25*600黄色" [ref=e208]:
+                        - generic [ref=e209]: 201#25*300亮光、201#25*400亮光、201#25*500亮光、201#25*600亮光、304#25*300亮光、304#25*400亮光、304#25*500亮光、304#25*600亮光、201#25*300黑色、201#25*400黑色、201#25*500黑色、201#25*600黑色、304#25*300黑色、304#25*400黑色、304#25*500黑色、304#25*600黑色、304#25*300黄色、304#25*400黄色、304#25*500黄色、304#25*600黄色
+                    - row "型号 608" [ref=e210]:
+                      - cell "型号" [ref=e211]
+                      - cell "608" [ref=e212]:
+                        - generic [ref=e213]: "608"
+                    - row "是否跨境出口专供货源 是" [ref=e214]:
+                      - cell "是否跨境出口专供货源" [ref=e215]
+                      - cell "是" [ref=e216]:
+                        - generic [ref=e217]: 是
+                    - row "主要下游平台 亚马逊、wish、速卖通、独立站" [ref=e218]:
+                      - cell "主要下游平台" [ref=e219]
+                      - cell "亚马逊、wish、速卖通、独立站" [ref=e220]:
+                        - generic [ref=e221]: 亚马逊、wish、速卖通、独立站
+                    - row "主要销售地区 欧洲、东南亚、北美、中东" [ref=e222]:
+                      - cell "主要销售地区" [ref=e223]
+                      - cell "欧洲、东南亚、北美、中东" [ref=e224]:
+                        - generic [ref=e225]: 欧洲、东南亚、北美、中东
+                    - row "有可授权的自有品牌 是" [ref=e226]:
+                      - cell "有可授权的自有品牌" [ref=e227]
+                      - cell "是" [ref=e228]:
+                        - generic [ref=e229]: 是
+                - button "全部参数 right" [ref=e231] [cursor=pointer]:
+                  - generic [ref=e232]: 全部参数
+                  - img "right" [ref=e233]:
+                    - img [ref=e234]
+          - generic [ref=e238]:
+            - generic [ref=e241] [cursor=pointer]: 视频
+            - generic [ref=e253] [cursor=pointer]:
+              - img [ref=e254]
+              - generic [ref=e255]: 参数
+      - generic [ref=e257]:
+        - generic [ref=e258]:
+          - generic [ref=e259]:
+            - generic [ref=e263]:
+              - generic [ref=e264]:
+                - img [ref=e266]
+                - img [ref=e268]
+                - heading "简约不锈钢防滑网纹滚花家用浴室卫生间老人残疾人卫浴马桶扶手" [level=1] [ref=e269]
+              - generic [ref=e271]:
+                - generic [ref=e272]:
+                  - img [ref=e273]
+                  - text: AI严选指数4.1
+                - generic [ref=e274]: 70+人好评
+                - generic [ref=e275]: 商品复购率43.9%
+            - generic [ref=e278] [cursor=pointer]:
+              - generic [ref=e279]:
+                - generic [ref=e280]: 价格
+                - generic [ref=e281]:
+                  - generic [ref=e282]: ¥
+                  - generic [ref=e283]: "10"
+                  - generic [ref=e284]: ".50"
+                - generic [ref=e285]: 起
+              - paragraph [ref=e286]:
+                - generic [ref=e287]:
+                  - generic: 登录查看更多优惠
+            - generic [ref=e289]:
+              - img "发货" [ref=e291]
+              - generic [ref=e292]:
+                - generic [ref=e293]: 广东潮州
+                - generic [ref=e294]: 送至
+                - button "广东肇庆" [ref=e296] [cursor=pointer]:
+                  - generic [ref=e297]:
+                    - text: 广东肇庆
+                    - emphasis [ref=e298]
+                - generic [ref=e299] [cursor=pointer]:
+                  - generic [ref=e300]: 预计3天发货
+                  - generic [ref=e301]: 承诺10天发货·常发申通快递
+                - generic [ref=e303]:
+                  - text: 运费
+                  - generic [ref=e304]: ¥4
+                  - text: 起
+            - generic [ref=e306]:
+              - img [ref=e308]
+              - paragraph [ref=e309]:
+                - generic [ref=e310]:
+                  - link "品质不符包赔" [ref=e311] [cursor=pointer]:
+                    - /url: https://pages-fast.1688.com/wow/cbu/default/defaultv1/TQCfKypffJ/index.html?wh_pid=4305327
+                  - generic [ref=e312] [cursor=pointer]: 7天无理由退货
+                  - generic [ref=e313] [cursor=pointer]: 严选晚发必赔
+            - generic [ref=e317]:
+              - heading "尺寸" [level=3] [ref=e319]
+              - generic [ref=e320]:
+                - generic [ref=e321]:
+                  - generic [ref=e322]:
+                    - generic [ref=e323]:
+                      - img [ref=e325] [cursor=pointer]
+                      - generic "201#25*300亮光" [ref=e326]
+                    - generic [ref=e329]:
+                      - generic: 库存1905件
+                    - generic [ref=e332]:
+                      - img "minus" [ref=e334]:
+                        - img [ref=e335]
+                      - spinbutton "0" [ref=e339]
+                      - img "plus" [ref=e341] [cursor=pointer]:
+                        - img [ref=e342]
+                  - generic [ref=e345]:
+                    - generic [ref=e346]:
+                      - img [ref=e348] [cursor=pointer]
+                      - generic "201#25*400亮光" [ref=e349]
+                    - generic [ref=e352]:
+                      - generic: 库存17440件
+                    - generic [ref=e355]:
+                      - img "minus" [ref=e357]:
+                        - img [ref=e358]
+                      - spinbutton "0" [ref=e362]
+                      - img "plus" [ref=e364] [cursor=pointer]:
+                        - img [ref=e365]
+                  - generic [ref=e368]:
+                    - generic [ref=e369]:
+                      - img [ref=e371] [cursor=pointer]
+                      - generic "201#25*500亮光" [ref=e372]
+                    - generic [ref=e375]:
+                      - generic: 库存16899件
+                    - generic [ref=e378]:
+                      - img "minus" [ref=e380]:
+                        - img [ref=e381]
+                      - spinbutton "0" [ref=e385]
+                      - img "plus" [ref=e387] [cursor=pointer]:
+                        - img [ref=e388]
+                  - generic [ref=e391]:
+                    - generic [ref=e392]:
+                      - img [ref=e394] [cursor=pointer]
+                      - generic "201#25*600亮光" [ref=e395]
+                    - generic [ref=e398]:
+                      - generic: 库存19970件
+                    - generic [ref=e401]:
+                      - img "minus" [ref=e403]:
+                        - img [ref=e404]
+                      - spinbutton "0" [ref=e408]
+                      - img "plus" [ref=e410] [cursor=pointer]:
+                        - img [ref=e411]
+                  - generic [ref=e414]:
+                    - generic [ref=e415]:
+                      - img [ref=e417] [cursor=pointer]
+                      - generic "304#25*300亮光" [ref=e418]
+                    - generic [ref=e421]:
+                      - generic: 库存17506件
+                    - generic [ref=e424]:
+                      - img "minus" [ref=e426]:
+                        - img [ref=e427]
+                      - spinbutton "0" [ref=e431]
+                      - img "plus" [ref=e433] [cursor=pointer]:
+                        - img [ref=e434]
+                  - generic [ref=e437]:
+                    - generic [ref=e438]:
+                      - img [ref=e440] [cursor=pointer]
+                      - generic "304#25*400亮光" [ref=e441]
+                    - generic [ref=e444]:
+                      - generic: 库存19806件
+                    - generic [ref=e447]:
+                      - img "minus" [ref=e449]:
+                        - img [ref=e450]
+                      - spinbutton "0" [ref=e454]
+                      - img "plus" [ref=e456] [cursor=pointer]:
+                        - img [ref=e457]
+                  - generic [ref=e460]:
+                    - generic [ref=e461]:
+                      - img [ref=e463] [cursor=pointer]
+                      - generic "304#25*500亮光" [ref=e464]
+                    - generic [ref=e467]:
+                      - generic: 库存19696件
+                    - generic [ref=e470]:
+                      - img "minus" [ref=e472]:
+                        - img [ref=e473]
+                      - spinbutton "0" [ref=e477]
+                      - img "plus" [ref=e479] [cursor=pointer]:
+                        - img [ref=e480]
+                  - generic [ref=e483]:
+                    - generic [ref=e484]:
+                      - img [ref=e486] [cursor=pointer]
+                      - generic "304#25*600亮光" [ref=e487]
+                    - generic [ref=e490]:
+                      - generic: 库存19819件
+                    - generic [ref=e493]:
+                      - img "minus" [ref=e495]:
+                        - img [ref=e496]
+                      - spinbutton "0" [ref=e500]
+                      - img "plus" [ref=e502] [cursor=pointer]:
+                        - img [ref=e503]
+                  - generic [ref=e506]:
+                    - generic [ref=e507]:
+                      - img [ref=e509] [cursor=pointer]
+                      - generic "201#25*300黑色" [ref=e510]
+                    - generic [ref=e513]:
+                      - generic: 库存19949件
+                    - generic [ref=e516]:
+                      - img "minus" [ref=e518]:
+                        - img [ref=e519]
+                      - spinbutton "0" [ref=e523]
+                      - img "plus" [ref=e525] [cursor=pointer]:
+                        - img [ref=e526]
+                  - generic [ref=e529]:
+                    - generic [ref=e530]:
+                      - img [ref=e532] [cursor=pointer]
+                      - generic "201#25*400黑色" [ref=e533]
+                    - generic [ref=e536]:
+                      - generic: 库存19822件
+                    - generic [ref=e539]:
+                      - img "minus" [ref=e541]:
+                        - img [ref=e542]
+                      - spinbutton "0" [ref=e546]
+                      - img "plus" [ref=e548] [cursor=pointer]:
+                        - img [ref=e549]
+                  - generic [ref=e552]:
+                    - generic [ref=e553]:
+                      - img [ref=e555] [cursor=pointer]
+                      - generic "201#25*500黑色" [ref=e556]
+                    - generic [ref=e559]:
+                      - generic: 库存19996件
+                    - generic [ref=e562]:
+                      - img "minus" [ref=e564]:
+                        - img [ref=e565]
+                      - spinbutton "0" [ref=e569]
+                      - img "plus" [ref=e571] [cursor=pointer]:
+                        - img [ref=e572]
+                  - generic [ref=e575]:
+                    - generic [ref=e576]:
+                      - img [ref=e578] [cursor=pointer]
+                      - generic "201#25*600黑色" [ref=e579]
+                    - generic [ref=e582]:
+                      - generic: 库存19996件
+                    - generic [ref=e585]:
+                      - img "minus" [ref=e587]:
+                        - img [ref=e588]
+                      - spinbutton "0" [ref=e592]
+                      - img "plus" [ref=e594] [cursor=pointer]:
+                        - img [ref=e595]
+                  - generic [ref=e598]:
+                    - generic [ref=e599]:
+                      - img [ref=e601] [cursor=pointer]
+                      - generic "304#25*300黑色" [ref=e602]
+                    - generic [ref=e605]:
+                      - generic: 库存19916件
+                    - generic [ref=e608]:
+                      - img "minus" [ref=e610]:
+                        - img [ref=e611]
+                      - spinbutton "0" [ref=e615]
+                      - img "plus" [ref=e617] [cursor=pointer]:
+                        - img [ref=e618]
+                  - generic [ref=e621]:
+                    - generic [ref=e622]:
+                      - img [ref=e624] [cursor=pointer]
+                      - generic "304#25*400黑色" [ref=e625]
+                    - generic [ref=e628]:
+                      - generic: 库存19924件
+                    - generic [ref=e631]:
+                      - img "minus" [ref=e633]:
+                        - img [ref=e634]
+                      - spinbutton "0" [ref=e638]
+                      - img "plus" [ref=e640] [cursor=pointer]:
+                        - img [ref=e641]
+                  - generic [ref=e644]:
+                    - generic [ref=e645]:
+                      - img [ref=e647] [cursor=pointer]
+                      - generic "304#25*500黑色" [ref=e648]
+                    - generic [ref=e651]:
+                      - generic: 库存19992件
+                    - generic [ref=e654]:
+                      - img "minus" [ref=e656]:
+                        - img [ref=e657]
+                      - spinbutton "0" [ref=e661]
+                      - img "plus" [ref=e663] [cursor=pointer]:
+                        - img [ref=e664]
+                  - generic [ref=e667]:
+                    - generic [ref=e668]:
+                      - img [ref=e670] [cursor=pointer]
+                      - generic "304#25*600黑色" [ref=e671]
+                    - generic [ref=e674]:
+                      - generic: 库存19992件
+                    - generic [ref=e677]:
+                      - img "minus" [ref=e679]:
+                        - img [ref=e680]
+                      - spinbutton "0" [ref=e684]
+                      - img "plus" [ref=e686] [cursor=pointer]:
+                        - img [ref=e687]
+                  - generic [ref=e690]:
+                    - generic [ref=e691]:
+                      - img [ref=e693] [cursor=pointer]
+                      - generic "304#25*300黄色" [ref=e694]
+                    - generic [ref=e697]:
+                      - generic: 库存19586件
+                    - generic [ref=e700]:
+                      - img "minus" [ref=e702]:
+                        - img [ref=e703]
+                      - spinbutton "0" [ref=e707]
+                      - img "plus" [ref=e709] [cursor=pointer]:
+                        - img [ref=e710]
+                - generic [ref=e716] [cursor=pointer]:
+                  - generic: 展开已售罄商品
+          - generic [ref=e718]: 占位符，去掉就没有高度了
+        - generic [ref=e719]:
+          - generic [ref=e722] [cursor=pointer]:
+            - generic: 登录查看全部规格
+          - generic [ref=e724]:
+            - generic [ref=e725]:
+              - heading "密文代发" [level=1] [ref=e726]
+              - list [ref=e727]:
+                - listitem [ref=e728]:
+                  - img "淘宝(菜鸟)" [ref=e729]
+            - generic [ref=e730]:
+              - paragraph [ref=e732]:
+                - generic [ref=e733]: 1件包邮
+                - generic [ref=e734]: ￥14
+                - generic [ref=e735]: ≥2件
+                - generic [ref=e736]: ￥10.5
+                - generic [ref=e737]: 官方仓退货
+              - generic [ref=e738]:
+                - button "立即铺货" [ref=e739] [cursor=pointer]:
+                  - generic [ref=e740]: 立即铺货
+                - button "加铺货单" [ref=e741] [cursor=pointer]:
+                  - generic [ref=e742]: 加铺货单
+                - button "代发下单" [ref=e743] [cursor=pointer]:
+                  - generic [ref=e744]: 代发下单
+            - table [ref=e746] [cursor=pointer]:
+              - rowgroup [ref=e747]:
+                - row "近30天代发数量 100以内 48h揽收率 25.00% 近7天代发数量 100以内" [ref=e748]:
+                  - cell "近30天代发数量" [ref=e749]
+                  - cell "100以内" [ref=e750]
+                  - cell "48h揽收率" [ref=e751]
+                  - cell "25.00%" [ref=e752]
+                  - cell "近7天代发数量" [ref=e753]
+                  - cell "100以内" [ref=e754]
+                - row "24h揽收率 11.00% 下游铺货数 100以内 铺货分销商数 500+" [ref=e755]:
+                  - cell "24h揽收率" [ref=e756]
+                  - cell "11.00%" [ref=e757]
+                  - cell "下游铺货数" [ref=e758]
+                  - cell "100以内" [ref=e759]
+                  - cell "铺货分销商数" [ref=e760]
+                  - cell "500+" [ref=e761]
+    - generic [ref=e763]:
+      - generic [ref=e765]:
+        - generic [ref=e767] [cursor=pointer]:
+          - generic: 商品评价
+        - generic [ref=e769] [cursor=pointer]:
+          - generic: 商品属性
+        - generic [ref=e771] [cursor=pointer]:
+          - generic: 包装信息
+        - generic [ref=e773] [cursor=pointer]:
+          - generic: 商品详情
+        - generic [ref=e1205] [cursor=pointer]:
+          - generic: 热门推荐
+      - generic [ref=e774]:
+        - generic [ref=e777]:
+          - generic [ref=e778]:
+            - heading "商品评价" [level=1] [ref=e779]:
+              - generic [ref=e780]:
+                - generic: 商品评价
+            - generic [ref=e782]:
+              - radiogroup [ref=e783]:
+                - listitem [ref=e784]:
+                  - radio [checked] [ref=e785]:
+                    - img [ref=e787]:
+                      - img [ref=e788]
+                    - img [ref=e791]:
+                      - img [ref=e792]
+                - listitem [ref=e794]:
+                  - radio [checked] [ref=e795]:
+                    - img [ref=e797]:
+                      - img [ref=e798]
+                    - img [ref=e801]:
+                      - img [ref=e802]
+                - listitem [ref=e804]:
+                  - radio [checked] [ref=e805]:
+                    - img [ref=e807]:
+                      - img [ref=e808]
+                    - img [ref=e811]:
+                      - img [ref=e812]
+                - listitem [ref=e814]:
+                  - radio [checked] [ref=e815]:
+                    - img [ref=e817]:
+                      - img [ref=e818]
+                    - img [ref=e821]:
+                      - img [ref=e822]
+                - listitem [ref=e824]:
+                  - radio [checked] [ref=e825]:
+                    - img [ref=e827]:
+                      - img [ref=e828]
+                    - img [ref=e831]:
+                      - img [ref=e832]
+              - emphasis [ref=e834]: "5.0"
+              - generic [ref=e835]:
+                - text: (
+                - generic [ref=e837]:
+                  - generic: 70+条评价
+                - text: )
+              - emphasis [ref=e838]: "|"
+              - generic [ref=e840]:
+                - generic: 好评率
+              - emphasis [ref=e841]: 100%
+          - generic [ref=e842]:
+            - generic [ref=e843]:
+              - button "全部 70+" [ref=e844] [cursor=pointer]:
+                - generic [ref=e845]: 全部
+                - generic [ref=e846]: 70+
+              - button "好评 70+" [ref=e847] [cursor=pointer]:
+                - generic [ref=e848]: 好评
+                - generic [ref=e849]: 70+
+              - button "有内容 70+" [ref=e850] [cursor=pointer]:
+                - generic [ref=e851]: 有内容
+                - generic [ref=e852]: 70+
+              - button "有图 30+" [ref=e853] [cursor=pointer]:
+                - generic [ref=e854]: 有图
+                - generic [ref=e855]: 30+
+            - generic [ref=e856]:
+              - generic [ref=e857]:
+                - generic [ref=e858]:
+                  - img [ref=e860]
+                  - generic [ref=e861]: 懒**6
+                  - emphasis [ref=e862]: "|"
+                  - text: 1件
+                - generic [ref=e863]: 老家茅厕门口装的，方便老人出入，质量很好，扶手有防滑纹非常实用，安装方便，很牢固，非常满意。
+                - generic [ref=e864]:
+                  - generic [ref=e865]:
+                    - img [ref=e866]
+                    - generic [ref=e868] [cursor=pointer]:
+                      - img "eye" [ref=e869]:
+                        - img [ref=e870]
+                      - text: 预览
+                  - generic [ref=e872]:
+                    - img [ref=e873]
+                    - generic [ref=e875] [cursor=pointer]:
+                      - img "eye" [ref=e876]:
+                        - img [ref=e877]
+                      - text: 预览
+                  - generic [ref=e879]:
+                    - img [ref=e880]
+                    - generic [ref=e882] [cursor=pointer]:
+                      - img "eye" [ref=e883]:
+                        - img [ref=e884]
+                      - text: 预览
+              - generic [ref=e886]:
+                - generic [ref=e887]:
+                  - img [ref=e889]
+                  - generic [ref=e890]: 蒋**8
+                  - emphasis [ref=e891]: "|"
+                  - text: 1件
+                - generic [ref=e892]: 宝贝收到。物美价优，质量上乘。如果是免打孔安装就好了
+              - button "查看全部评价" [ref=e894] [cursor=pointer]:
+                - generic [ref=e895]:
+                  - generic: 查看全部评价
+        - generic [ref=e898]:
+          - heading "商品属性" [level=1] [ref=e900]:
+            - generic [ref=e901]:
+              - generic: 商品属性
+          - table [ref=e906]:
+            - rowgroup [ref=e907]:
+              - row "材质 不锈钢 表面处理 抛光" [ref=e908]:
+                - rowheader "材质" [ref=e909]
+                - cell "不锈钢" [ref=e910]:
+                  - generic [ref=e912]: 不锈钢
+                - rowheader "表面处理" [ref=e913]
+                - cell "抛光" [ref=e914]:
+                  - generic [ref=e916]: 抛光
+              - row "品牌 凯凯 承重 300" [ref=e917]:
+                - rowheader "品牌" [ref=e918]
+                - cell "凯凯" [ref=e919]:
+                  - generic [ref=e921]: 凯凯
+                - rowheader "承重" [ref=e922]
+                - cell "300" [ref=e923]:
+                  - generic [ref=e925]: "300"
+              - row "风格 现代简约 认证 无" [ref=e926]:
+                - rowheader "风格" [ref=e927]
+                - cell "现代简约" [ref=e928]:
+                  - generic [ref=e930]: 现代简约
+                - rowheader "认证" [ref=e931]
+                - cell "无" [ref=e932]:
+                  - generic [ref=e934]: 无
+              - row "是否一般纳税人 是 货号 608" [ref=e935]:
+                - rowheader "是否一般纳税人" [ref=e936]
+                - cell "是" [ref=e937]:
+                  - generic [ref=e939]: 是
+                - rowheader "货号" [ref=e940]
+                - cell "608" [ref=e941]:
+                  - generic [ref=e943]: "608"
+              - row "尺寸 201#25*300亮光,201#25*400亮光,201#25*500亮光,201#25*600亮光,304#25*300亮光,304#25*400亮光,304#25*500亮光,304#25*600亮光,201#25*300黑色,201#25*400黑色,201#25*500黑色,201#25*600黑色,304#25*300黑色,304#25*400黑色,304#25*500黑色,304#25*600黑色,304#25*300黄色,304#25*400黄色,304#25*500黄色,304#25*600黄色 型号 608" [ref=e944]:
+                - rowheader "尺寸" [ref=e945]
+                - cell "201#25*300亮光,201#25*400亮光,201#25*500亮光,201#25*600亮光,304#25*300亮光,304#25*400亮光,304#25*500亮光,304#25*600亮光,201#25*300黑色,201#25*400黑色,201#25*500黑色,201#25*600黑色,304#25*300黑色,304#25*400黑色,304#25*500黑色,304#25*600黑色,304#25*300黄色,304#25*400黄色,304#25*500黄色,304#25*600黄色" [ref=e946]:
+                  - generic [ref=e948]: 201#25*300亮光,201#25*400亮光,201#25*500亮光,201#25*600亮光,304#25*300亮光,304#25*400亮光,304#25*500亮光,304#25*600亮光,201#25*300黑色,201#25*400黑色,201#25*500黑色,201#25*600黑色,304#25*300黑色,304#25*400黑色,304#25*500黑色,304#25*600黑色,304#25*300黄色,304#25*400黄色,304#25*500黄色,304#25*600黄色
+                - rowheader "型号" [ref=e949]
+                - cell "608" [ref=e950]:
+                  - generic [ref=e952]: "608"
+              - row "是否跨境出口专供货源 是 主要下游平台 亚马逊,wish,速卖通,独立站" [ref=e953]:
+                - rowheader "是否跨境出口专供货源" [ref=e954]
+                - cell "是" [ref=e955]:
+                  - generic [ref=e957]: 是
+                - rowheader "主要下游平台" [ref=e958]
+                - cell "亚马逊,wish,速卖通,独立站" [ref=e959]:
+                  - generic [ref=e961]: 亚马逊,wish,速卖通,独立站
+              - row "主要销售地区 欧洲,东南亚,北美,中东 有可授权的自有品牌 是" [ref=e962]:
+                - rowheader "主要销售地区" [ref=e963]
+                - cell "欧洲,东南亚,北美,中东" [ref=e964]:
+                  - generic [ref=e966]: 欧洲,东南亚,北美,中东
+                - rowheader "有可授权的自有品牌" [ref=e967]
+                - cell "是" [ref=e968]:
+                  - generic [ref=e970]: 是
+        - generic [ref=e972]:
+          - heading "包装信息" [level=1] [ref=e974]:
+            - generic [ref=e975]:
+              - generic: 包装信息
+          - generic [ref=e976]:
+            - heading "商品件重尺" [level=3] [ref=e977]
+            - table [ref=e982]:
+              - rowgroup [ref=e983]:
+                - row "尺寸 重量(g)" [ref=e984]:
+                  - columnheader "尺寸" [ref=e985]
+                  - columnheader "重量(g)" [ref=e986]
+              - rowgroup [ref=e987]:
+                - row "201#25*300亮光 500" [ref=e988]:
+                  - cell "201#25*300亮光" [ref=e989]
+                  - cell "500" [ref=e990]
+                - row "201#25*400亮光 500" [ref=e991]:
+                  - cell "201#25*400亮光" [ref=e992]
+                  - cell "500" [ref=e993]
+                - row "201#25*500亮光 500" [ref=e994]:
+                  - cell "201#25*500亮光" [ref=e995]
+                  - cell "500" [ref=e996]
+                - row "201#25*600亮光 500" [ref=e997]:
+                  - cell "201#25*600亮光" [ref=e998]
+                  - cell "500" [ref=e999]
+                - row "304#25*300亮光 500" [ref=e1000]:
+                  - cell "304#25*300亮光" [ref=e1001]
+                  - cell "500" [ref=e1002]
+                - row "304#25*400亮光 500" [ref=e1003]:
+                  - cell "304#25*400亮光" [ref=e1004]
+                  - cell "500" [ref=e1005]
+                - row "304#25*500亮光 500" [ref=e1006]:
+                  - cell "304#25*500亮光" [ref=e1007]
+                  - cell "500" [ref=e1008]
+                - row "304#25*600亮光 500" [ref=e1009]:
+                  - cell "304#25*600亮光" [ref=e1010]
+                  - cell "500" [ref=e1011]
+                - row "201#25*300黑色 500" [ref=e1012]:
+                  - cell "201#25*300黑色" [ref=e1013]
+                  - cell "500" [ref=e1014]
+                - row "201#25*400黑色 500" [ref=e1015]:
+                  - cell "201#25*400黑色" [ref=e1016]
+                  - cell "500" [ref=e1017]
+                - row "201#25*500黑色 500" [ref=e1018]:
+                  - cell "201#25*500黑色" [ref=e1019]
+                  - cell "500" [ref=e1020]
+                - row "201#25*600黑色 500" [ref=e1021]:
+                  - cell "201#25*600黑色" [ref=e1022]
+                  - cell "500" [ref=e1023]
+                - row "304#25*300黑色 500" [ref=e1024]:
+                  - cell "304#25*300黑色" [ref=e1025]
+                  - cell "500" [ref=e1026]
+                - row "304#25*400黑色 500" [ref=e1027]:
+                  - cell "304#25*400黑色" [ref=e1028]
+                  - cell "500" [ref=e1029]
+                - row "304#25*500黑色 500" [ref=e1030]:
+                  - cell "304#25*500黑色" [ref=e1031]
+                  - cell "500" [ref=e1032]
+                - row "304#25*600黑色 500" [ref=e1033]:
+                  - cell "304#25*600黑色" [ref=e1034]
+                  - cell "500" [ref=e1035]
+                - row "304#25*300黄色 500" [ref=e1036]:
+                  - cell "304#25*300黄色" [ref=e1037]
+                  - cell "500" [ref=e1038]
+                - row "304#25*400黄色 500" [ref=e1039]:
+                  - cell "304#25*400黄色" [ref=e1040]
+                  - cell "500" [ref=e1041]
+                - row "304#25*500黄色 500" [ref=e1042]:
+                  - cell "304#25*500黄色" [ref=e1043]
+                  - cell "500" [ref=e1044]
+                - row "304#25*600黄色 500" [ref=e1045]:
+                  - cell "304#25*600黄色" [ref=e1046]
+                  - cell "500" [ref=e1047]
+        - generic [ref=e1049]:
+          - generic [ref=e1050]:
+            - heading "商品详情" [level=1] [ref=e1052]:
+              - generic [ref=e1053]:
+                - generic: 商品详情
+            - generic [ref=e1206]:
+              - generic [ref=e1210]:
+                - generic [ref=e1212]:
+                  - paragraph [ref=e1213]: 店铺推荐
+                  - list [ref=e1214]:
+                    - listitem [ref=e1215]:
+                      - link "批发卫生间现代塑料不锈钢家用老人残疾人无障碍防滑安全马桶扶手 ¥17.00" [ref=e1216] [cursor=pointer]:
+                        - /url: https://detail.1688.com/offer/719507723299.html?spm=a261y.7663282.description.sdmap_0.249f7652YLxhNw&traceId=2150461617804548571752385e0bb8&spm-auction=722104677326
+                        - paragraph [ref=e1218]: 批发卫生间现代塑料不锈钢家用老人残疾人无障碍防滑安全马桶扶手
+                        - paragraph [ref=e1219]:
+                          - text: ¥
+                          - emphasis [ref=e1220]: "17.00"
+                    - listitem [ref=e1221]:
+                      - link "卫生间无障碍卫浴扶手现代简约不锈钢安全防滑老人浴室马桶扶手 ¥2.60" [ref=e1222] [cursor=pointer]:
+                        - /url: https://detail.1688.com/offer/719583061463.html?spm=a261y.7663282.description.sdmap_1.249f7652YLxhNw&traceId=2150461617804548571752385e0bb8&spm-auction=722104677326
+                        - paragraph [ref=e1224]: 卫生间无障碍卫浴扶手现代简约不锈钢安全防滑老人浴室马桶扶手
+                        - paragraph [ref=e1225]:
+                          - text: ¥
+                          - emphasis [ref=e1226]: "2.60"
+                    - listitem [ref=e1227]:
+                      - link "厂家批发金属拉手 简约304不锈钢推拉板家用通道门把手消防门拉手 ¥2.65" [ref=e1228] [cursor=pointer]:
+                        - /url: https://detail.1688.com/offer/719222793369.html?spm=a261y.7663282.description.sdmap_2.249f7652YLxhNw&traceId=2150461617804548571752385e0bb8&spm-auction=722104677326
+                        - paragraph [ref=e1230]: 厂家批发金属拉手 简约304不锈钢推拉板家用通道门把手消防门拉手
+                        - paragraph [ref=e1231]:
+                          - text: ¥
+                          - emphasis [ref=e1232]: "2.65"
+                    - listitem [ref=e1233]:
+                      - link "批发方形卷纸架 简约304不锈钢家用免打孔手机置物架卫生间纸巾架 ¥4.60" [ref=e1234] [cursor=pointer]:
+                        - /url: https://detail.1688.com/offer/723820894955.html?spm=a261y.7663282.description.sdmap_3.249f7652YLxhNw&traceId=2150461617804548571752385e0bb8&spm-auction=722104677326
+                        - paragraph [ref=e1236]: 批发方形卷纸架 简约304不锈钢家用免打孔手机置物架卫生间纸巾架
+                        - paragraph [ref=e1237]:
+                          - text: ¥
+                          - emphasis [ref=e1238]: "4.60"
+                    - listitem [ref=e1239]:
+                      - link "批发金属门把手 简约不锈钢推拉板逃生门拉手 木门防火门明装把手 ¥5.60" [ref=e1240] [cursor=pointer]:
+                        - /url: https://detail.1688.com/offer/719065017992.html?spm=a261y.7663282.description.sdmap_4.249f7652YLxhNw&traceId=2150461617804548571752385e0bb8&spm-auction=722104677326
+                        - paragraph [ref=e1242]: 批发金属门把手 简约不锈钢推拉板逃生门拉手 木门防火门明装把手
+                        - paragraph [ref=e1243]:
+                          - text: ¥
+                          - emphasis [ref=e1244]: "5.60"
+                - img
+                - img
+                - img
+                - img
+                - img
+                - img
+                - img
+                - img
+                - img
+                - img
+              - button "登录查看全部" [ref=e1246] [cursor=pointer]:
+                - generic [ref=e1247]:
+                  - generic: 登录查看全部
+                - img [ref=e1248]:
+                  - img [ref=e1249]
+          - generic [ref=e1054]:
+            - generic [ref=e1055]:
+              - term [ref=e1056]: 【平台活动下价格】
+              - generic [ref=e1057]:
+                - strong [ref=e1058]: 活动前价格：
+                - text: （1）非分销场景下，指平台活动（不含分销场景的活动）预热期（若无预热期，则为爆发期）前的商品销售价格；（2）分销场景下，专指分销活动预热期（若无预热期，则为爆发期）前的商品销售价格。
+              - generic [ref=e1059]: 前述价格未计算平台发放的各种采购津贴、跨店券、红包等优惠，未计算商家设置的满减优惠、优惠券、店铺返利金、店铺会员折扣以及L会员价、商家设置的指定人群单品优惠活动等各种优惠；该价格会计算其他非平台活动下的各种优惠（包括商家自行设置的非指定人群的单品优惠等，最终以商家的自行设置为准）。前述商品销售价格指商品页面当日展示的标价；若当日商家多次调整销售价格的，取当日最后展示的销售价格。
+              - term [ref=e1060]: 【非平台活动下价格】
+              - generic [ref=e1061]:
+                - strong [ref=e1062]: 划线价格：
+                - text: 指商家自营销活动场景下的商品价格，该价格不包含平台的各种优惠活动。可能是商品的销售指导价或该商品的曾经展示过的销售价等，并非原价，仅供参考。
+              - generic [ref=e1063]:
+                - strong [ref=e1064]: 未划线价格：
+                - text: 商品在1688平台上由商家自行设置的销售标价，具体的成交价格根据商家设置的各种优惠活动发生变化，最终以订单结算页价格为准。
+              - term [ref=e1065]: 【发布价】
+              - generic [ref=e1066]: 指商品在1688平台上由商家自行设置的销售标价并叠加L会员价折扣后的价格，并非原价，仅供参考。
+              - term [ref=e1067]: 【全网销量】
+              - generic [ref=e1068]: 指同款商品在多个平台（含淘宝、天猫及其他电子商务平台）上的累积销量
+              - generic [ref=e1069]:
+                - strong [ref=e1070]: 同款：
+                - text: 指商品名称、外观、规格、成分、颜色、材质、功效、功能等多维度要素具有高度的相似性，但不视为二者具有完全相同的品牌、品质、功效或功能。
+            - generic [ref=e1071]:
+              - term [ref=e1072]: "*注："
+              - generic [ref=e1073]:
+                - generic [ref=e1074]: 1、前述说明仅适用于价格比较下的场景。
+                - generic [ref=e1075]: 2、活动前的时间通常为预热期/爆发期的前一天，但因数据的延迟性，取价时间可能会发生改变，最终以前述展示的具体时间和所对应的商品价格为准。
+            - generic [ref=e1076]: 内容声明：阿里巴巴中国站为第三方交易平台及互联网信息服务提供者，阿里巴巴中国站（含网站、客户端等）所展示的商品/服务的标题、价格、详情等信息内容系由店铺经营者发布，其真实性、准确性和合法性均由店铺经营者负责。阿里巴巴提醒您购买商品/服务前注意谨慎核实，如您对商品/服务的标题、价格、详情等任何信息有任何疑问的，请在购买前通过阿里旺旺与店铺经营者沟通确认；阿里巴巴中国站存在海量店铺，如您发现店铺内有任何违法/侵权信息，请立即向阿里巴巴举报并提供有效线索。
+    - generic [ref=e1251]:
+      - generic [ref=e1254]:
+        - heading "热门推荐" [level=5] [ref=e1255]:
+          - img [ref=e1256]
+          - generic [ref=e1258]:
+            - generic: 热门推荐
+        - generic [ref=e1259]:
+          - link "查看 undefined 的优惠详情" [ref=e1260] [cursor=pointer]:
+            - /url: https://detail.1688.com/offer/723820894955.html?traceId=2150461617804548571752385e0bb8&spm-auction=722104677326
+            - generic [ref=e1263]: 批发方形卷纸架 简约304不锈钢家用免打孔手机置物架卫生间纸巾架
+            - generic [ref=e1264]:
+              - generic [ref=e1265]:
+                - generic [ref=e1266]: ¥
+                - text: "4"
+                - generic [ref=e1267]: ".6"
+              - generic [ref=e1268]: 已售3万+个
+          - link "查看 undefined 的优惠详情" [ref=e1269] [cursor=pointer]:
+            - /url: https://detail.1688.com/offer/719222793369.html?traceId=2150461617804548571752385e0bb8&spm-auction=722104677326
+            - generic [ref=e1272]: 厂家批发金属拉手 简约304不锈钢推拉板家用通道门把手消防门拉手
+            - generic [ref=e1273]:
+              - generic [ref=e1274]:
+                - generic [ref=e1275]: ¥
+                - text: "2"
+                - generic [ref=e1276]: ".65"
+              - generic [ref=e1277]: 已售5万+件
+          - link "查看 undefined 的优惠详情" [ref=e1278] [cursor=pointer]:
+            - /url: https://detail.1688.com/offer/828713008628.html?traceId=2150461617804548571752385e0bb8&spm-auction=722104677326
+            - generic [ref=e1281]: 批发金色圆形不锈钢台上盆 轻奢酒店卫生间洗手盆 新款北欧洗脸盆
+            - generic [ref=e1282]:
+              - generic [ref=e1283]:
+                - generic [ref=e1284]: ¥
+                - text: "88"
+                - generic [ref=e1285]: ".00"
+              - generic [ref=e1286]: 已售20+个
+          - link "查看 undefined 的优惠详情" [ref=e1287] [cursor=pointer]:
+            - /url: https://detail.1688.com/offer/746286781253.html?traceId=2150461617804548571752385e0bb8&spm-auction=722104677326
+            - generic [ref=e1290]: 批发浴室挂件 简约不锈钢毛巾架 家用酒店卫生间浴巾架置物架套装
+            - generic [ref=e1291]:
+              - generic [ref=e1292]:
+                - generic [ref=e1293]: ¥
+                - text: "9"
+                - generic [ref=e1294]: ".00"
+              - generic [ref=e1295]: 已售300+个
+          - link "查看 undefined 的优惠详情" [ref=e1296] [cursor=pointer]:
+            - /url: https://detail.1688.com/offer/739454907841.html?traceId=2150461617804548571752385e0bb8&spm-auction=722104677326
+            - generic [ref=e1299]: 批发老人残疾人防滑把手 简约塑料不锈钢家用卫生间浴室马桶扶手
+            - generic [ref=e1300]:
+              - generic [ref=e1301]:
+                - generic [ref=e1302]: ¥
+                - text: "15"
+                - generic [ref=e1303]: ".5"
+              - generic [ref=e1304]: 已售900+支
+          - link "查看 undefined 的优惠详情" [ref=e1305] [cursor=pointer]:
+            - /url: https://detail.1688.com/offer/841569520151.html?traceId=2150461617804548571752385e0bb8&spm-auction=722104677326
+            - generic [ref=e1308]: 批发卫生间多功能置物架简约不锈钢家用浴室多层壁挂三角架收纳架
+            - generic [ref=e1309]:
+              - generic [ref=e1310]:
+                - generic [ref=e1311]: ¥
+                - text: "8"
+                - generic [ref=e1312]: ".00"
+              - generic [ref=e1313]: 已售900+个
+      - generic:
+        - generic:
+          - generic [ref=e1077]:
+            - generic [ref=e1080] [cursor=pointer]:
+              - generic: 登录查看更多福利~
+            - button "一键登录" [ref=e1081] [cursor=pointer]:
+              - generic [ref=e1082]:
+                - generic: 一键登录
+          - generic: 客服
+          - generic: 更多
+          - generic: 顶部
+          - generic: 旧版
+  - generic [ref=e1084]:
+    - img [ref=e1086]
+    - generic [ref=e1087]:
+      - generic [ref=e1088]:
+        - link "阿里巴巴集团" [ref=e1089] [cursor=pointer]:
+          - /url: https://www.alibabagroup.com/cn/global/home
+        - emphasis [ref=e1090]: "|"
+        - link "阿里巴巴国际站" [ref=e1091] [cursor=pointer]:
+          - /url: https://www.alibaba.com/
+        - emphasis [ref=e1092]: "|"
+        - link "1688" [ref=e1093] [cursor=pointer]:
+          - /url: https://www.1688.com/
+        - emphasis [ref=e1094]: "|"
+        - link "全球速卖通" [ref=e1095] [cursor=pointer]:
+          - /url: https://www.aliexpress.com/
+        - emphasis [ref=e1096]: "|"
+        - link "淘宝网" [ref=e1097] [cursor=pointer]:
+          - /url: https://www.taobao.com/
+        - emphasis [ref=e1098]: "|"
+        - link "天猫" [ref=e1099] [cursor=pointer]:
+          - /url: https://www.tmall.com/
+        - emphasis [ref=e1100]: "|"
+        - link "一淘" [ref=e1101] [cursor=pointer]:
+          - /url: https://www.etao.com/
+        - emphasis [ref=e1102]: "|"
+        - link "飞猪" [ref=e1103] [cursor=pointer]:
+          - /url: https://www.fliggy.com/
+        - emphasis [ref=e1104]: "|"
+        - link "阿里妈妈" [ref=e1105] [cursor=pointer]:
+          - /url: https://www.alimama.com/index.htm
+        - emphasis [ref=e1106]: "|"
+        - link "阿里云计算" [ref=e1107] [cursor=pointer]:
+          - /url: https://www.aliyun.com/
+        - emphasis [ref=e1108]: "|"
+        - link "AliOS" [ref=e1109] [cursor=pointer]:
+          - /url: http://www.alios.cn/
+        - link "阿里通信" [ref=e1110] [cursor=pointer]:
+          - /url: https://aliqin.tmall.com/
+        - emphasis [ref=e1111]: "|"
+        - link "UC" [ref=e1112] [cursor=pointer]:
+          - /url: http://www.uc.cn/
+        - emphasis [ref=e1113]: "|"
+        - link "支付宝" [ref=e1114] [cursor=pointer]:
+          - /url: https://www.alipay.com/
+        - emphasis [ref=e1115]: "|"
+        - link "钉钉" [ref=e1116] [cursor=pointer]:
+          - /url: https://www.dingtalk.com/
+        - emphasis [ref=e1117]: "|"
+        - link "阿里健康" [ref=e1118] [cursor=pointer]:
+          - /url: https://www.alihealth.cn/
+        - emphasis [ref=e1119]: "|"
+        - link "跨境供应链" [ref=e1120] [cursor=pointer]:
+          - /url: https://onetouch.alibaba.com/
+        - emphasis [ref=e1121]: "|"
+        - link "Lazada" [ref=e1122] [cursor=pointer]:
+          - /url: https://taobao.lazada.sg/
+        - emphasis [ref=e1123]: "|"
+        - link "达摩院" [ref=e1124] [cursor=pointer]:
+          - /url: https://damo.alibaba.com/
+        - emphasis [ref=e1125]: "|"
+        - link "阿里安全" [ref=e1126] [cursor=pointer]:
+          - /url: https://s.alibaba.com/?scene=clinks
+        - emphasis [ref=e1127]: "|"
+        - link "淘宝海外" [ref=e1128] [cursor=pointer]:
+          - /url: https://world.taobao.com/
+        - emphasis [ref=e1129]: "|"
+        - link "1688Japan" [ref=e1130] [cursor=pointer]:
+          - /url: https://1688japan.com/
+        - link "关于阿里巴巴" [ref=e1131] [cursor=pointer]:
+          - /url: https://www.alibabagroup.com/cn/global/home
+        - emphasis [ref=e1132]: "|"
+        - link "联系我们" [ref=e1133] [cursor=pointer]:
+          - /url: https://114.1688.com/kf/contact.html
+        - emphasis [ref=e1134]: "|"
+        - link "知识产权保护" [ref=e1135] [cursor=pointer]:
+          - /url: https://page.1688.com/trust/Intellectual.html
+        - emphasis [ref=e1136]: "|"
+        - link "著作权与商标声明" [ref=e1137] [cursor=pointer]:
+          - /url: https://rule.1688.com/policy/copyright.html
+        - emphasis [ref=e1138]: "|"
+        - link "廉正举报" [ref=e1139] [cursor=pointer]:
+          - /url: https://taotian.jubao.alibaba.com
+        - emphasis [ref=e1140]: "|"
+        - link "法律声明" [ref=e1141] [cursor=pointer]:
+          - /url: https://rule.1688.com/policy/legal.html
+        - emphasis [ref=e1142]: "|"
+        - link "服务条款" [ref=e1143] [cursor=pointer]:
+          - /url: https://rule.1688.com/policy/terms.htm
+        - emphasis [ref=e1144]: "|"
+        - link "隐私政策" [ref=e1145] [cursor=pointer]:
+          - /url: https://terms.alicdn.com/legal-agreement/terms/suit_bu1_b2b/suit_bu1_b2b201703271337_94551.html
+        - emphasis [ref=e1146]: "|"
+        - link "网站导航" [ref=e1147] [cursor=pointer]:
+          - /url: https://www.1688.com/alphabet_sitemap.html
+      - generic [ref=e1148]:
+        - link "医疗器械网络交易服务第三方平台备案证:(浙)网械平台备字[2018]第00001号" [ref=e1149] [cursor=pointer]:
+          - /url: https://img.alicdn.com/imgextra/i4/O1CN01A5gI291qDByV1fkpq_!!6000000005461-2-tps-798-1126.png
+        - text: "广播电视节目制作经营许可证: (浙)字第00523号"
+        - link "增值电信业务经营许可证:浙B2-20120091" [ref=e1151] [cursor=pointer]:
+          - /url: http://beian.miit.gov.cn
+        - text: 浙江省网络食品销售第三方平台提供者备案:浙网食A33010005互联网药品信息服务资格证书:(浙)-经营性-2021-0209
+        - generic [ref=e1152]:
+          - link "浙公网安备 33010002000121号" [ref=e1154] [cursor=pointer]:
+            - /url: http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010002000121
+          - link "浙B2-20120091-2" [ref=e1156] [cursor=pointer]:
+            - /url: https://beian.miit.gov.cn
+        - text: 出版物网络交易平台服务经营备案证:新出发浙备字第2017001号信息网络传播视听许可证:1109366号
+        - generic [ref=e1157]:
+          - text: 算法备案：
+          - link "网信算备330108445385802220019号" [ref=e1159] [cursor=pointer]:
+            - /url: https://terms.alicdn.com/legal-agreement/terms/privacy/20221101140343728/20221101140343728.html
+          - link "网信算备330108445385805220017号" [ref=e1161] [cursor=pointer]:
+            - /url: https://terms.alicdn.com/legal-agreement/terms/privacy/20221101140343728/20221101140343728.html
+          - link "网信算备330108445385804220011号" [ref=e1163] [cursor=pointer]:
+            - /url: https://terms.alicdn.com/legal-agreement/terms/privacy/20221101140343728/20221101140343728.html
+        - text: © 2010-2026 1688.com 版权所有互联网违法和不良信息举报中心:0571-81683755 blxx@list.alibaba-inc.com
+      - generic [ref=e1164]:
+        - link "网络警察" [ref=e1165] [cursor=pointer]:
+          - /url: http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010002000121
+        - link "网络工商" [ref=e1166] [cursor=pointer]:
+          - /url: http://idinfo.zjamr.zj.gov.cn/bscx.do?method=lzxx&id=3301083301080000022169
+          - img [ref=e1167]
+        - link "可信网站" [ref=e1168] [cursor=pointer]:
+          - /url: https://t.knet.cn/
+        - link "违法和不良信息举报中心" [ref=e1169] [cursor=pointer]:
+          - /url: http://www.12377.cn/
+        - link "违法和不良信息举报中心APP下载" [ref=e1170] [cursor=pointer]:
+          - /url: https://www.12377.cn/node_548446.htm
+  - iframe
+  - generic [ref=e1171]:
+    - img [ref=e1172] [cursor=pointer]
+    - iframe [ref=e1173]:
+      - generic [ref=f3e3]:
+        - generic [ref=f3e5]:
+          - generic [ref=f3e11] [cursor=pointer]: 
+          - generic [ref=f3e15]:
+            - generic [ref=f3e17]: 
+            - generic [ref=f3e19] [cursor=pointer]: 请按照说明拖动滑块
+        - paragraph
+        - generic [ref=f3e20]:
+          - generic [ref=f3e21]: 反馈码：e7c16c56809293e89b949870a3dd2f6a
+          - link "点我反馈 >" [ref=f3e22] [cursor=pointer]:
+            - /url: https://h5api.m.1688.com//h5/mtop.alibaba.wireless.live.offer.getliveinfobyofferidwap/1.0/_____tmd_____/page/feedback?rand=S3WxGHAgAt756EpznwfNzJq2AFA2qBNla3j6EINUS8We9dazM_iKElp8DwVSHZUevpC41Bx7RzivXIj9RnZgdg&x5secdata=xg9c5416c22338919ajae7c16c56809293e89b949870a3dd2f6a1780454858a-717315356a-517068781abaac3eakcapslidev233b3b6065b59823af34a7a3ca95d304ce7c__bx__h5api.m.1688.com%3A443%2Fh5%2Fmtop.alibaba.wireless.live.offer.getliveinfobyofferidwap%2F1.0&type=9&language=cn&ncInitSuccess=true
+          - paragraph
+  - iframe [ref=e1174]:
+    - generic [active]:
+      - generic:
+        - generic: SDK初始化成功
+  - generic:
+    - generic:
+      - generic:
+        - generic: 确定
+    - generic:
+      - generic:
+        - generic: 立即铺货
+        - generic: 关联商品
+        - generic: 取消
+    - generic:
+      - generic:
+        - generic: 同步地址至下游店铺
+        - generic: 取消
+  - generic [ref=e1175]:
+    - img [ref=e1176] [cursor=pointer]
+    - iframe [ref=e1177]:
+      - generic [ref=f6e3]:
+        - generic [ref=f6e5]:
+          - generic [ref=f6e11] [cursor=pointer]: 
+          - generic [ref=f6e15]:
+            - generic [ref=f6e17]: 
+            - generic [ref=f6e19] [cursor=pointer]: 请按照说明拖动滑块
+        - paragraph
+        - generic [ref=f6e20]:
+          - generic [ref=f6e21]: 反馈码：c8b552c92ed6b8519597b2af6d0d7071
+          - link "点我反馈 >" [ref=f6e22] [cursor=pointer]:
+            - /url: https://h5api.m.1688.com//h5/mtop.1688.freightinfoservice.getfreightinfowithscene/1.0/_____tmd_____/page/feedback?rand=S3WxGHAgAt756EpznwfNzJq2AFA2qBNla3j6EINUS8We9dazM_iKElp8DwVSHZUevpC41Bx7RzivXIj9RnZgdg&x5secdata=xgedffff84941d8585jac8b552c92ed6b8519597b2af6d0d70711780454859a-717315356a1612445405abaac3eakcapslidev233be2fca30b5f7d1bea43fce745aff447c4__bx__h5api.m.1688.com%3A443%2Fh5%2Fmtop.1688.freightinfoservice.getfreightinfowithscene%2F1.0&type=9&language=cn&ncInitSuccess=true
+          - paragraph
