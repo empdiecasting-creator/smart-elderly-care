@@ -226,8 +226,9 @@
   position: fixed;
   top: 0;
   right: 0;
-  bottom: 0;
   width: 100vw;
+  height: 100vh;
+  height: 100dvh;
   background: var(--color-surface);
   z-index: 100;
   display: flex;
@@ -338,8 +339,8 @@
 }
 
 .mobile-menu__submenu--open {
-  max-height: 300px;
-  padding-bottom: var(--space-3);
+  max-height: 500px;
+  padding-bottom: var(--space-4);
 }
 
 .mobile-menu__sublink {
