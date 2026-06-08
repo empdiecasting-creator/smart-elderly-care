@@ -20,6 +20,17 @@
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%232C5F4E'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='sans-serif' font-size='18' font-weight='bold'>C</text></svg>">
 
+  <style>
+    /* ── Mobile: 767px and below ── */
+    @media (max-width: 767px) {
+      .td-hero-img { max-width: 320px !important; margin: 0 auto; }
+      .td-colors { grid-template-columns: 1fr !important; max-width: 340px !important; margin-inline: auto !important; }
+      .td-func-grid { grid-template-columns: 1fr !important; }
+      .td-scene-grid { grid-template-columns: 1fr !important; }
+      .td-why-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -112,8 +123,8 @@
           </div>
         </div>
         <div style="display:flex;align-items:center;justify-content:flex-end;">
-          <div style="width:100%;max-width:480px;aspect-ratio:1/1;border-radius:var(--radius-md);overflow:hidden;">
-            <img src="../assets/images/products/td-hero.avif" alt="Elderly woman in hydraulic transfer chair with caregiver in nursing home" style="width:100%;height:100%;object-fit:cover;">
+          <div class="td-hero-img" style="width:100%;max-width:480px;aspect-ratio:1/1;border-radius:var(--radius-md);overflow:hidden;">
+            <img src="../assets/images/products/transfer/td-hero.avif" alt="Elderly woman in hydraulic transfer chair with caregiver in nursing home" style="width:100%;height:100%;object-fit:cover;">
           </div>
         </div>
       </div>
@@ -129,11 +140,11 @@
         <p style="color:var(--color-text-muted);max-width:480px;margin-inline:auto;line-height:1.6;">Every color includes the same package: standing assist, commode bucket, seat cushion, and dining table.</p>
       </div>
 
-      <div class="reveal-stagger" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-6);max-width:900px;margin-inline:auto;">
+      <div class="reveal-stagger td-colors" style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-6);max-width:900px;margin-inline:auto;">
         <!-- Blue -->
         <div style="border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--color-border);background:var(--color-surface);">
           <div style="aspect-ratio:3/4;overflow:hidden;">
-            <img src="../assets/images/products/Shifter Blue.avif" alt="Transfer chair — blue" style="width:100%;height:100%;object-fit:cover;">
+            <img src="../assets/images/products/transfer/Shifter Blue.avif" alt="Transfer chair — blue" style="width:100%;height:100%;object-fit:cover;">
           </div>
           <div style="padding:var(--space-6);text-align:center;">
             <div style="width:32px;height:32px;border-radius:50%;background:#4A90D9;margin:0 auto var(--space-3);border:2px solid var(--color-border);"></div>
@@ -144,7 +155,7 @@
         <!-- Black -->
         <div style="border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--color-border);background:var(--color-surface);">
           <div style="aspect-ratio:3/4;overflow:hidden;">
-            <img src="../assets/images/products/Shifter Black.avif" alt="Transfer chair — black" style="width:100%;height:100%;object-fit:cover;">
+            <img src="../assets/images/products/transfer/Shifter Black.avif" alt="Transfer chair — black" style="width:100%;height:100%;object-fit:cover;">
           </div>
           <div style="padding:var(--space-6);text-align:center;">
             <div style="width:32px;height:32px;border-radius:50%;background:#2D2D2D;margin:0 auto var(--space-3);border:2px solid var(--color-border);"></div>
@@ -155,7 +166,7 @@
         <!-- Orange -->
         <div style="border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--color-border);background:var(--color-surface);">
           <div style="aspect-ratio:3/4;overflow:hidden;">
-            <img src="../assets/images/products/Shifter Orange.avif" alt="Transfer chair — orange" style="width:100%;height:100%;object-fit:cover;">
+            <img src="../assets/images/products/transfer/Shifter Orange.avif" alt="Transfer chair — orange" style="width:100%;height:100%;object-fit:cover;">
           </div>
           <div style="padding:var(--space-6);text-align:center;">
             <div style="width:32px;height:32px;border-radius:50%;background:#E8803A;margin:0 auto var(--space-3);border:2px solid var(--color-border);"></div>
@@ -203,11 +214,11 @@
         <p style="color:var(--color-text-muted);max-width:480px;margin-inline:auto;line-height:1.6;">The same device covers six common care routines — reducing the number of transfers and the equipment you need.</p>
       </div>
 
-      <div class="grid grid--3 grid--gap-lg reveal-stagger">
+      <div class="grid grid--3 grid--gap-lg reveal-stagger td-func-grid">
         <!-- 1. Sofa Repositioning -->
         <div style="border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--color-border);background:var(--color-surface);">
           <div style="overflow:hidden;">
-            <img style="width:100%;height:auto;display:block;" src="../assets/images/products/Sofa Repositioning.jpeg" alt="Patient transfer chair used for sofa repositioning">
+            <img style="width:100%;height:auto;display:block;" src="../assets/images/products/transfer/Sofa Repositioning.webp" alt="Patient transfer chair used for sofa repositioning">
           </div>
           <div style="padding:var(--space-5);">
             <h3 style="font-weight:700;font-size:var(--text-base);margin-bottom:var(--space-1);">Sofa Repositioning</h3>
@@ -217,7 +228,7 @@
         <!-- 2. Sitting Mode -->
         <div style="border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--color-border);background:var(--color-surface);">
           <div style="overflow:hidden;">
-            <img style="width:100%;height:auto;display:block;" src="../assets/images/products/Sitting Mode.jpeg" alt="Patient transfer chair in sitting mode">
+            <img style="width:100%;height:auto;display:block;" src="../assets/images/products/transfer/Sitting Mode.webp" alt="Patient transfer chair in sitting mode">
           </div>
           <div style="padding:var(--space-5);">
             <h3 style="font-weight:700;font-size:var(--text-base);margin-bottom:var(--space-1);">Sitting Mode</h3>
@@ -227,7 +238,7 @@
         <!-- 3. Dining Mode -->
         <div style="border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--color-border);background:var(--color-surface);">
           <div style="overflow:hidden;">
-            <img style="width:100%;height:auto;display:block;" src="../assets/images/products/Dining Mode.jpeg" alt="Patient transfer chair with dining table">
+            <img style="width:100%;height:auto;display:block;" src="../assets/images/products/transfer/Dining Mode.webp" alt="Patient transfer chair with dining table">
           </div>
           <div style="padding:var(--space-5);">
             <h3 style="font-weight:700;font-size:var(--text-base);margin-bottom:var(--space-1);">Dining Mode</h3>
@@ -237,7 +248,7 @@
         <!-- 4. Shower Mode -->
         <div style="border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--color-border);background:var(--color-surface);">
           <div style="overflow:hidden;">
-            <img style="width:100%;height:auto;display:block;" src="../assets/images/products/shower mode.jpeg" alt="Patient transfer chair in shower">
+            <img style="width:100%;height:auto;display:block;" src="../assets/images/products/transfer/shower mode.webp" alt="Patient transfer chair in shower">
           </div>
           <div style="padding:var(--space-5);">
             <h3 style="font-weight:700;font-size:var(--text-base);margin-bottom:var(--space-1);">Shower Mode</h3>
@@ -247,7 +258,7 @@
         <!-- 5. Integrated Dining Table -->
         <div style="border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--color-border);background:var(--color-surface);">
           <div style="overflow:hidden;">
-            <img style="width:100%;height:auto;display:block;" src="../assets/images/products/Integrated Dining Table.jpeg" alt="Close-up of integrated dining table on transfer chair">
+            <img style="width:100%;height:auto;display:block;" src="../assets/images/products/transfer/Integrated Dining Table.webp" alt="Close-up of integrated dining table on transfer chair">
           </div>
           <div style="padding:var(--space-5);">
             <h3 style="font-weight:700;font-size:var(--text-base);margin-bottom:var(--space-1);">Integrated Dining Table</h3>
@@ -257,7 +268,7 @@
         <!-- 6. Bedroom Reconfiguration -->
         <div style="border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--color-border);background:var(--color-surface);">
           <div style="overflow:hidden;">
-            <img style="width:100%;height:auto;display:block;" src="../assets/images/products/Bedroom Reconfiguration.jpeg" alt="Patient transfer chair positioned next to a bed">
+            <img style="width:100%;height:auto;display:block;" src="../assets/images/products/transfer/Bedroom Reconfiguration.webp" alt="Patient transfer chair positioned next to a bed">
           </div>
           <div style="padding:var(--space-5);">
             <h3 style="font-weight:700;font-size:var(--text-base);margin-bottom:var(--space-1);">Bedroom Reconfiguration</h3>
@@ -275,11 +286,11 @@
         <h2 style="font-family:'Sora',sans-serif;font-size:clamp(1.5rem,3vw,2.25rem);font-weight:700;letter-spacing:-0.02em;margin-bottom:var(--space-3);">Built for real care environments</h2>
       </div>
 
-      <div class="grid grid--3 grid--gap-lg reveal-stagger">
+      <div class="grid grid--3 grid--gap-lg reveal-stagger td-scene-grid">
         <!-- Effect 1: Toilet Transfer -->
         <div style="border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--color-border);background:var(--color-surface);">
           <div style="aspect-ratio:4/3;overflow:hidden;">
-            <img src="../assets/images/products/td-scene-01.avif" alt="Transfer chair positioned over a toilet" style="width:100%;height:100%;object-fit:cover;">
+            <img src="../assets/images/products/transfer/td-scene-01.avif" alt="Transfer chair positioned over a toilet" style="width:100%;height:100%;object-fit:cover;">
           </div>
           <div style="padding:var(--space-5);text-align:center;">
             <p style="font-weight:600;font-size:var(--text-sm);">Over-toilet positioning</p>
@@ -288,7 +299,7 @@
         <!-- Effect 2: Caregiver Operation -->
         <div style="border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--color-border);background:var(--color-surface);">
           <div style="aspect-ratio:4/3;overflow:hidden;">
-            <img src="../assets/images/products/td-scene-02.jpeg" alt="Caregiver operating the hydraulic pedal" style="width:100%;height:100%;object-fit:cover;">
+            <img src="../assets/images/products/transfer/td-scene-02.jpeg" alt="Caregiver operating the hydraulic pedal" style="width:100%;height:100%;object-fit:cover;">
           </div>
           <div style="padding:var(--space-5);text-align:center;">
             <p style="font-weight:600;font-size:var(--text-sm);">Caregiver operating the hydraulic pedal</p>
@@ -297,7 +308,7 @@
         <!-- Effect 3: Facility Context -->
         <div style="border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--color-border);background:var(--color-surface);">
           <div style="aspect-ratio:4/3;overflow:hidden;">
-            <img src="../assets/images/products/td-scene-03.jpeg" alt="Transfer chair in a care facility room" style="width:100%;height:100%;object-fit:cover;">
+            <img src="../assets/images/products/transfer/td-scene-03.jpeg" alt="Transfer chair in a care facility room" style="width:100%;height:100%;object-fit:cover;">
           </div>
           <div style="padding:var(--space-5);text-align:center;">
             <p style="font-weight:600;font-size:var(--text-sm);">In a care facility room</p>
@@ -355,7 +366,7 @@
 
         <div class="reveal" style="margin-top:var(--space-10);max-width:580px;margin-inline:auto;">
           <p style="text-align:center;font-weight:600;font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-4);">Product Dimensions</p>
-          <img src="../assets/images/products/shifter size.jpg" alt="Transfer chair dimensions diagram" style="width:100%;border-radius:var(--radius-md);display:block;">
+          <img src="../assets/images/products/transfer/shifter size.jpg" alt="Transfer chair dimensions diagram" style="width:100%;border-radius:var(--radius-md);display:block;">
         </div>
       </div>
     </div>
@@ -367,7 +378,7 @@
       <div style="text-align:center;margin-bottom:var(--space-12);" class="reveal">
         <h2 style="font-family:'Sora',sans-serif;font-size:clamp(1.5rem,3vw,2.25rem);font-weight:700;letter-spacing:-0.02em;margin-bottom:var(--space-3);">Why source this device through us</h2>
       </div>
-      <div class="grid grid--3 grid--gap-lg reveal-stagger">
+      <div class="grid grid--3 grid--gap-lg reveal-stagger td-why-grid">
         <div class="feature-item">
           <div class="feature-item__icon"><i class="ph ph-factory"></i></div>
           <h3 class="feature-item__title">Medical equipment specialist</h3>
@@ -418,7 +429,7 @@
       <div style="text-align:center;margin-bottom:var(--space-12);" class="reveal"><h3 style="font-size:var(--text-2xl);margin-bottom:var(--space-2);">Complete the transfer safety system</h3></div>
       <div class="grid grid--3 grid--gap-lg reveal-stagger">
         <a href="grab-bars.html" class="product-card" style="text-decoration:none;color:inherit;">
-          <div class="product-card__image"><img src="../assets/images/products/gb-01.webp" alt="Grab bar"></div>
+          <div class="product-card__image"><img src="../assets/images/products/grab bar/gb-01.webp" alt="Grab bar" style="width:100%;height:100%;object-fit:cover;"></div>
           <div class="product-card__body"><h4 class="product-card__title" style="font-size:var(--text-lg);">Grab Bars</h4><p class="product-card__desc">Wall-mounted safety bars near beds, toilets, and showers — the fixed support residents reach for during every transfer.</p></div>
         </a>
         <a href="smart-cane.html" class="product-card" style="text-decoration:none;color:inherit;">
