@@ -7,13 +7,12 @@
       "command": "npx serve -p 8080 --no-clipboard",
       "isBackground": true,
       "problemMatcher": {
-        "pattern": {
-          "regexp": "."
-        },
+        "owner": "custom",
+        "pattern": { "regexp": "" },
         "background": {
           "activeOnStart": true,
-          "beginsPattern": ".*",
-          "endsPattern": ".*Serving.*"
+          "beginsPattern": ".",
+          "endsPattern": "Serving"
         }
       }
     }
