@@ -31,6 +31,24 @@ export async function onRequestPost({ request, env }) {
     return Response.redirect(`${new URL(request.url).origin}/contact?success=0`, 302);
   }
 
+  // ── Turnstile verification ──
+  const token = formData.get('cf-turnstile-response');
+  if (!token) {
+    return Response.redirect(`${new URL(request.url).origin}/contact?success=1`, 302);
+  }
+  const verify = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      secret: env.TURNSTILE_SECRET_KEY || '0x4AAAAAADjIYZQrKhjwtsfNLz-5ZdJu1rk',
+      response: token,
+    }),
+  });
+  const outcome = await verify.json();
+  if (!outcome.success) {
+    return Response.redirect(`${new URL(request.url).origin}/contact?success=1`, 302);
+  }
+
   // ── 3. Rate limit by IP ──
   const ip = request.headers.get('CF-Connecting-IP') || 'unknown';
   const now = Date.now();

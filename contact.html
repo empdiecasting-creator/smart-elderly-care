@@ -110,6 +110,7 @@
               <textarea id="message" name="message" class="form-textarea" required placeholder="Tell us about your facility, the products you are interested in, and any specific questions."></textarea>
             </div>
 
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAADjIYR20aAJ56H3w" style="margin-bottom:var(--space-4);" data-theme="light"></div>
             <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">Send Inquiry</button>
 
             <p style="font-size: var(--text-xs); color: var(--color-text-muted); margin-top: var(--space-3); text-align: center;">
@@ -230,6 +231,7 @@
 </footer>
 
 <button class="back-to-top" aria-label="Back to top"><i class="ph ph-arrow-up"></i></button>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <script>document.getElementById('_ts').value = Date.now();</script>
 <script src="js/main.js" defer></script>
 <script src="js/forms.js" defer></script>
