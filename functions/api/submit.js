@@ -22,7 +22,7 @@ export async function onRequestPost({ request, env }) {
       },
       body: JSON.stringify({
         from: 'EmpCaring <noreply@empcaring.com>',
-        to: ['info@empcaring.com'],
+        to: [env.CONTACT_EMAIL || 'wayhumdragon@gmail.com'],
         subject: `New inquiry from ${name} — ${company || 'No company'}`,
         reply_to: email,
         html: `
