@@ -81,6 +81,11 @@
         <div>
 
           <form id="contact-form" action="/api/submit" method="POST">
+            <!-- Anti-spam: honeypot (hidden from humans, bots fill it) -->
+            <input type="text" name="_honey" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
+            <input type="text" name="website" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
+            <!-- Anti-spam: timestamp gate -->
+            <input type="hidden" name="_ts" id="_ts" value="">
             <div class="form-success" role="status">
               <i class="ph ph-check-circle" style="font-size:1.25rem;margin-right:var(--space-2);vertical-align:middle;"></i>
               <strong>Inquiry sent!</strong> Our team will respond within one business day.
@@ -225,6 +230,7 @@
 </footer>
 
 <button class="back-to-top" aria-label="Back to top"><i class="ph ph-arrow-up"></i></button>
+<script>document.getElementById('_ts').value = Date.now();</script>
 <script src="js/main.js" defer></script>
 <script src="js/forms.js" defer></script>
 
