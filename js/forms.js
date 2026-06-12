@@ -99,11 +99,11 @@
   }
 
   /* ==========================================================
-     Form Submission — Web3Forms
+     Form Submission — Cloudflare Function
      ========================================================== */
 
 
-  // Show success message if redirected back from Web3Forms
+  // Show success message if redirected back from Cloudflare Function
   if (window.location.search.includes('success=1')) {
     var successEl = document.querySelector('.form-success');
     if (successEl) {
