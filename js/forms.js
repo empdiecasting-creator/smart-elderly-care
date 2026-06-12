@@ -99,7 +99,7 @@
   }
 
   /* ==========================================================
-     Form Submission — Formspark
+     Form Submission — Web3Forms
      ========================================================== */
 
   var successEl = form.querySelector('.form-success');
@@ -128,14 +128,13 @@
     submitBtn.disabled = true;
   });
 
-  // Show success message if redirected back from Formspark
+  // Show success message if redirected back from Web3Forms
   if (window.location.search.includes('success=1')) {
     var successEl = document.querySelector('.form-success');
     if (successEl) {
       successEl.classList.add('form-success--visible');
       successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
-    // Clean URL
     window.history.replaceState({}, '', window.location.pathname);
   }
 })();
