@@ -105,8 +105,6 @@
   var successEl = form.querySelector('.form-success');
 
   form.addEventListener('submit', function (e) {
-    e.preventDefault();
-
     // Validate all fields
     var allValid = true;
     fields.forEach(function (field) {
@@ -118,41 +116,26 @@
     });
 
     if (!allValid) {
-      // Focus first invalid field
+      e.preventDefault();
       var firstError = form.querySelector('.form-input--error, .form-textarea--error');
       if (firstError) firstError.focus();
       return;
     }
 
+    // Valid: let Formspark handle the native submission
     var submitBtn = form.querySelector('button[type="submit"]');
-    var originalText = submitBtn.textContent;
     submitBtn.textContent = 'Sending...';
     submitBtn.disabled = true;
-
-    var formData = new FormData(form);
-
-    fetch(form.action, {
-      method: 'POST',
-      body: formData,
-      headers: { 'Accept': 'application/json' }
-    })
-      .then(function (response) {
-        if (response.ok) {
-          form.reset();
-          if (successEl) {
-            successEl.classList.add('form-success--visible');
-            successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          }
-        } else {
-          throw new Error('Submission failed');
-        }
-      })
-      .catch(function () {
-        alert('Something went wrong. Please email us at info@empcaring.com');
-      })
-      .finally(function () {
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-      });
   });
+
+  // Show success message if redirected back from Formspark
+  if (window.location.search.includes('success=1')) {
+    var successEl = document.querySelector('.form-success');
+    if (successEl) {
+      successEl.classList.add('form-success--visible');
+      successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    // Clean URL
+    window.history.replaceState({}, '', window.location.pathname);
+  }
 })();
