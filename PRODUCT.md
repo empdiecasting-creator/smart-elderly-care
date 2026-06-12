@@ -14,7 +14,7 @@ A sourcing platform that connects overseas buyers with verified Chinese manufact
 
 ## Brand Personality
 
-Straightforward, trustworthy, no-BS. Not a fancy med-tech startup. Not a generic AliExpress dropshipper. A sourcing partner who does the homework so buyers don't have to.
+Straightforward, trustworthy, no-BS. Not a fancy med-tech startup. Not a generic AliExpress dropshipper. A manufacturer who builds quality products and sells them factory-direct.
 
 ## Anti-references
 
