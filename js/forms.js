@@ -133,39 +133,22 @@
 
     fetch(form.action, {
       method: 'POST',
-      body: formData
+      body: formData,
+      headers: { 'Accept': 'application/json' }
     })
       .then(function (response) {
         if (response.ok) {
-        return response.json();
-      })
-      .then(function (data) {
-        if (data.success) {
           form.reset();
           if (successEl) {
             successEl.classList.add('form-success--visible');
             successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
           }
         } else {
-          throw new Error(data.message || 'Submission failed');
+          throw new Error('Submission failed');
         }
       })
       .catch(function () {
-        // Fallback: open mailto if Formspark is unreachable
-        var subject = encodeURIComponent('Product Inquiry from ' + (form.querySelector('[name="company"]')?.value || 'Website'));
-        var body = encodeURIComponent(
-          'Name: ' + (form.querySelector('[name="name"]')?.value || '') + '\n' +
-          'Email: ' + (form.querySelector('[name="email"]')?.value || '') + '\n' +
-          'Company: ' + (form.querySelector('[name="company"]')?.value || '') + '\n' +
-          'Phone: ' + (form.querySelector('[name="phone"]')?.value || '') + '\n' +
-          'Product Interest: ' + (form.querySelector('[name="product_interest"]')?.value || '') + '\n' +
-          'Message: ' + (form.querySelector('[name="message"]')?.value || '')
-        );
-        window.location.href = 'mailto:sales@empcaring.com?subject=' + subject + '&body=' + body;
-
-        if (successEl) {
-          successEl.classList.add('form-success--visible');
-        }
+        alert('Something went wrong. Please email us at info@empcaring.com');
       })
       .finally(function () {
         submitBtn.textContent = originalText;
