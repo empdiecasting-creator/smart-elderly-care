@@ -99,7 +99,7 @@
   }
 
   /* ==========================================================
-     Form Submission — Web3Forms
+     Form Submission — Formspark
      ========================================================== */
 
   var successEl = form.querySelector('.form-success');
@@ -136,6 +136,7 @@
       body: formData
     })
       .then(function (response) {
+        if (response.ok) {
         return response.json();
       })
       .then(function (data) {
@@ -150,7 +151,7 @@
         }
       })
       .catch(function () {
-        // Fallback: open mailto if Web3Forms is unreachable
+        // Fallback: open mailto if Formspark is unreachable
         var subject = encodeURIComponent('Product Inquiry from ' + (form.querySelector('[name="company"]')?.value || 'Website'));
         var body = encodeURIComponent(
           'Name: ' + (form.querySelector('[name="name"]')?.value || '') + '\n' +
