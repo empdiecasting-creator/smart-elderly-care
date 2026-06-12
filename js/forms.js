@@ -102,31 +102,6 @@
      Form Submission — Web3Forms
      ========================================================== */
 
-  var successEl = form.querySelector('.form-success');
-
-  form.addEventListener('submit', function (e) {
-    // Validate all fields
-    var allValid = true;
-    fields.forEach(function (field) {
-      var rules = field.getAttribute('data-validate').split(',');
-      var errorEl = field.parentNode.querySelector('.form-error');
-      if (!validateField(field, rules, errorEl)) {
-        allValid = false;
-      }
-    });
-
-    if (!allValid) {
-      e.preventDefault();
-      var firstError = form.querySelector('.form-input--error, .form-textarea--error');
-      if (firstError) firstError.focus();
-      return;
-    }
-
-    // Valid: let Formspark handle the native submission
-    var submitBtn = form.querySelector('button[type="submit"]');
-    submitBtn.textContent = 'Sending...';
-    submitBtn.disabled = true;
-  });
 
   // Show success message if redirected back from Web3Forms
   if (window.location.search.includes('success=1')) {
