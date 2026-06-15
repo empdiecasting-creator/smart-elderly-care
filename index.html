@@ -92,24 +92,36 @@
 <main id="main-content">
 
   <!-- ====== HERO ====== -->
-  <section style="background:var(--color-primary-dark);padding:var(--space-24) 0 var(--space-16);position:relative;overflow:hidden;">
+  <section style="background:var(--color-primary-dark);padding:var(--space-24) 0;position:relative;overflow:hidden;">
     <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(212,167,106,0.10) 0%,transparent 50%),radial-gradient(ellipse at 30% 80%,rgba(44,95,78,0.3) 0%,transparent 50%);pointer-events:none;"></div>
     <div class="container" style="position:relative;z-index:2;">
       <div class="hero-split" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-12);align-items:center;min-height:60vh;">
-        <!-- Left: Copy -->
         <div>
           <h1 class="reveal" style="font-family:'Sora',sans-serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:700;letter-spacing:-0.03em;line-height:1.1;color:#fff;margin-bottom:var(--space-4);text-wrap:balance;">
-            Your direct source for elderly care equipment
+            Nursing home equipment at <span style="color:var(--color-accent);">factory prices</span>
           </h1>
-          <p class="reveal" style="font-size:var(--text-lg);color:rgba(255,255,255,0.7);line-height:1.6;margin-bottom:var(--space-8);max-width:480px;">
-            We manufacture walking canes, grab bars, transfer chairs, and health monitoring rings — and ship them factory-direct to nursing homes, hospitals, and care facilities worldwide.
+          <p class="reveal" style="font-size:var(--text-lg);color:rgba(255,255,255,0.7);line-height:1.6;margin-bottom:var(--space-3);max-width:480px;">
+            We manufacture grab bars, transfer chairs, walking canes, and health rings — then ship them directly to your facility. No distributors. No markup. Just factory-direct pricing and consistent quality.
           </p>
-          <div class="flex flex-gap reveal" style="flex-wrap:wrap;">
-            <a href="products.html" class="btn btn--lg" style="background:var(--color-accent);color:var(--color-primary-dark);font-weight:700;border-color:var(--color-accent);">Explore Products</a>
-            <a href="contact.html" class="btn btn--lg" style="background:transparent;border:1px solid rgba(255,255,255,0.3);color:#fff;">Request a Quote</a>
+          <div class="reveal" style="display:flex;gap:var(--space-4);flex-wrap:wrap;margin-bottom:var(--space-6);">
+            <div style="display:flex;align-items:center;gap:var(--space-2);">
+              <i class="ph ph-check-circle" style="color:var(--color-accent);"></i>
+              <span style="color:rgba(255,255,255,0.8);font-size:var(--text-sm);">Save 30-50% vs. distributors</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:var(--space-2);">
+              <i class="ph ph-check-circle" style="color:var(--color-accent);"></i>
+              <span style="color:rgba(255,255,255,0.8);font-size:var(--text-sm);">Samples in 3 business days</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:var(--space-2);">
+              <i class="ph ph-check-circle" style="color:var(--color-accent);"></i>
+              <span style="color:rgba(255,255,255,0.8);font-size:var(--text-sm);">OEM & private label available</span>
+            </div>
+          </div>
+          <div class="reveal" style="display:flex;gap:var(--space-4);flex-wrap:wrap;">
+            <a href="contact.html" class="btn btn--lg" style="background:var(--color-accent);color:var(--color-primary-dark);font-weight:700;border-color:var(--color-accent);font-size:var(--text-base);padding:var(--space-3) var(--space-8);">Request a Quote <i class="ph ph-arrow-right"></i></a>
+            <a href="products.html" class="btn btn--lg" style="background:transparent;border:1px solid rgba(255,255,255,0.3);color:#fff;">Browse Products</a>
           </div>
         </div>
-        <!-- Right: Product mosaic -->
         <div class="reveal hero-mosaic" style="display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:4px;aspect-ratio:1;border-radius:var(--radius-md);overflow:hidden;max-width:480px;margin-left:auto;">
           <a href="solutions/smart-cane.html" style="overflow:hidden;"><img src="assets/images/products/cane/cane-silver.jpg" alt="Walking Cane" style="width:100%;height:100%;object-fit:cover;"></a>
           <a href="solutions/grab-bars.html" style="overflow:hidden;"><img src="assets/images/products/grab bar/gb-01.webp" alt="Grab Bars" style="width:100%;height:100%;object-fit:cover;"></a>
@@ -120,232 +132,145 @@
     </div>
   </section>
 
-  <!-- ====== PRODUCT HIGHLIGHTS ====== -->
+  <!-- ====== PRODUCTS ====== -->
   <section class="section">
     <div class="container">
       <div style="text-align:center;margin-bottom:var(--space-16);" class="reveal">
-        <h2 style="margin-bottom:var(--space-4);">Products designed for professional care</h2>
-        <p style="color:var(--color-text-muted);max-width:560px;margin-inline:auto;">
-          Every product we make is built for the demands of commercial care environments.
-        </p>
+        <h2 style="margin-bottom:var(--space-4);">Equipment built for professional care environments</h2>
+        <p style="color:var(--color-text-muted);max-width:560px;margin-inline:auto;">Four product lines, all manufactured in-house, all available for immediate bulk order.</p>
       </div>
 
-      <!-- Walking Cane — image left -->
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-12);align-items:center;margin-bottom:var(--space-16);" class="prod-row" class="reveal">
+      <div class="prod-row" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-12);align-items:center;margin-bottom:var(--space-20);" class="reveal">
         <div style="aspect-ratio:4/3;border-radius:var(--radius-md);overflow:hidden;">
           <img src="assets/images/products/cane/cane-hero.webp" alt="Walking Cane" style="width:100%;height:100%;object-fit:cover;">
         </div>
         <div>
           <h3 style="font-family:'Sora',sans-serif;font-size:var(--text-2xl);font-weight:700;margin-bottom:var(--space-3);">Walking Cane</h3>
-          <p style="color:var(--color-text-muted);margin-bottom:var(--space-4);">Adjustable aluminum quad cane. 350g, 4-leg stable base, T-handle grip, 70–95 cm range, 4 colors.</p>
-          <a href="solutions/smart-cane.html" style="font-weight:600;color:var(--color-primary);">View details <i class="ph ph-arrow-right"></i></a>
+          <p style="color:var(--color-text-muted);margin-bottom:var(--space-2);line-height:1.6;">Adjustable aluminum quad cane. 350g — light enough for all-day use, stable enough to stand on its own. 4 colors, 70-95 cm range.</p>
+          <p style="color:var(--color-success);font-size:var(--text-sm);font-weight:600;margin-bottom:var(--space-4);"><i class="ph ph-check"></i> 4-leg base · T-handle grip · Spring-clip lock</p>
+          <a href="solutions/smart-cane.html" class="btn btn--outline">View Walking Cane <i class="ph ph-arrow-right"></i></a>
         </div>
       </div>
 
-      <!-- Grab Bars — image right -->
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-12);align-items:center;margin-bottom:var(--space-16);" class="prod-row" class="reveal">
+      <div class="prod-row" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-12);align-items:center;margin-bottom:var(--space-20);" class="reveal">
         <div style="order:1;">
           <h3 style="font-family:'Sora',sans-serif;font-size:var(--text-2xl);font-weight:700;margin-bottom:var(--space-3);">Grab Bars</h3>
-          <p style="color:var(--color-text-muted);margin-bottom:var(--space-4);">304 stainless steel, machined knurl grip. 32mm tube, 50 kg rated, 3 finishes, 10 lengths.</p>
-          <a href="solutions/grab-bars.html" style="font-weight:600;color:var(--color-primary);">View details <i class="ph ph-arrow-right"></i></a>
+          <p style="color:var(--color-text-muted);margin-bottom:var(--space-2);line-height:1.6;">304 stainless steel with machined knurl grip. No rubber sleeves that wear out — the grip is cut directly into the metal. 3 finishes, 10 lengths.</p>
+          <p style="color:var(--color-success);font-size:var(--text-sm);font-weight:600;margin-bottom:var(--space-4);"><i class="ph ph-check"></i> 50 kg rated · 32mm tube · 3-point flange mount</p>
+          <a href="solutions/grab-bars.html" class="btn btn--outline">View Grab Bars <i class="ph ph-arrow-right"></i></a>
         </div>
         <div style="aspect-ratio:4/3;border-radius:var(--radius-md);overflow:hidden;">
           <img src="assets/images/products/grab bar/gb-01.webp" alt="Grab Bars" style="width:100%;height:100%;object-fit:cover;">
         </div>
       </div>
 
-      <!-- Transfer Device + Smart Ring — side by side -->
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-12);align-items:start;margin-bottom:var(--space-16);" class="reveal">
-        <!-- Transfer Device -->
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4);align-items:center;" class="prod-row">
-          <div style="aspect-ratio:1;border-radius:var(--radius-md);overflow:hidden;">
-            <img src="assets/images/products/transfer/Shifter Blue.avif" alt="Transfer Device" style="width:100%;height:100%;object-fit:cover;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-8);margin-bottom:var(--space-10);" class="reveal">
+        <div style="display:flex;gap:var(--space-5);align-items:center;padding:var(--space-5);border:1px solid var(--color-border);border-radius:var(--radius-md);">
+          <div style="width:80px;height:80px;border-radius:var(--radius-md);overflow:hidden;flex-shrink:0;">
+            <img src="assets/images/products/transfer/Shifter Blue.avif" alt="Transfer Chair" style="width:100%;height:100%;object-fit:cover;">
           </div>
           <div>
-            <h3 style="font-family:'Sora',sans-serif;font-size:var(--text-lg);font-weight:700;margin-bottom:var(--space-2);">Transfer Chair</h3>
-            <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-2);">Hydraulic, 130 kg, built-in standing assist.</p>
-            <a href="solutions/transfer-device.html" style="font-weight:600;font-size:var(--text-sm);color:var(--color-primary);">View <i class="ph ph-arrow-right"></i></a>
+            <h3 style="font-weight:700;font-size:var(--text-base);margin-bottom:var(--space-1);">Transfer Chair</h3>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-2);">Hydraulic, 130 kg, built-in commode & standing assist.</p>
+            <a href="solutions/transfer-device.html" style="font-weight:600;font-size:var(--text-sm);color:var(--color-primary);">View details <i class="ph ph-arrow-right"></i></a>
           </div>
         </div>
-        <!-- Smart Ring -->
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4);align-items:center;" class="prod-row">
-          <div style="aspect-ratio:1;border-radius:var(--radius-md);overflow:hidden;">
+        <div style="display:flex;gap:var(--space-5);align-items:center;padding:var(--space-5);border:1px solid var(--color-border);border-radius:var(--radius-md);">
+          <div style="width:80px;height:80px;border-radius:var(--radius-md);overflow:hidden;flex-shrink:0;">
             <img src="assets/images/products/smart ring/ring-hero.webp" alt="Smart Ring" style="width:100%;height:100%;object-fit:cover;">
           </div>
           <div>
-            <h3 style="font-family:'Sora',sans-serif;font-size:var(--text-lg);font-weight:700;margin-bottom:var(--space-2);">Smart Ring</h3>
-            <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-2);">K3 health ring, 5ATM, 10-15 day battery.</p>
-            <a href="solutions/smart-ring.html" style="font-weight:600;font-size:var(--text-sm);color:var(--color-primary);">View <i class="ph ph-arrow-right"></i></a>
+            <h3 style="font-weight:700;font-size:var(--text-base);margin-bottom:var(--space-1);">Smart Ring</h3>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-2);">K3 health ring, 5ATM, 10-15 day battery, 3 colors.</p>
+            <a href="solutions/smart-ring.html" style="font-weight:600;font-size:var(--text-sm);color:var(--color-primary);">View details <i class="ph ph-arrow-right"></i></a>
           </div>
         </div>
+      </div>
+
+      <div style="text-align:center;" class="reveal">
+        <a href="products.html" class="btn btn--outline">Compare all products <i class="ph ph-arrow-right"></i></a>
       </div>
     </div>
   </section>
 
-  <!-- ====== VALUE PROPOSITION ====== -->
-  <section class="section" style="background: var(--color-surface-alt); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+  <!-- ====== WHY FACTORY-DIRECT ====== -->
+  <section class="section" style="background:var(--color-surface-alt);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);">
     <div class="container">
-      <div style="text-align: center; margin-bottom: var(--space-16);" class="reveal">
-        <h2 style="margin-bottom: var(--space-4);">Why procurement teams choose EmpCaring</h2>
-        <p style="color: var(--color-text-muted); max-width: 560px; margin-inline: auto;">
-          We understand what matters to B2B buyers: reliability, compliance, support, and total cost of ownership.
-        </p>
+      <div style="text-align:center;margin-bottom:var(--space-12);" class="reveal">
+        <h2 style="margin-bottom:var(--space-4);">Why factory-direct pricing changes the math for your facility</h2>
+        <p style="color:var(--color-text-muted);max-width:560px;margin-inline:auto;">When you cut out distributors, you save 30-50% on equipment costs — without cutting quality.</p>
       </div>
-
       <div class="grid grid--3 grid--gap-lg reveal-stagger">
-        <div class="value-card">
-          <div class="value-card__icon">
-            <i class="ph ph-factory"></i>
+        <div style="text-align:center;padding:var(--space-8);">
+          <div style="width:64px;height:64px;border-radius:50%;background:var(--color-primary-muted);display:flex;align-items:center;justify-content:center;margin:0 auto var(--space-4);">
+            <i class="ph ph-package" style="font-size:1.75rem;color:var(--color-primary);"></i>
           </div>
-          <h3 class="value-card__title">In-house manufacturing</h3>
-          <p class="value-card__desc">
-            We design, engineer, and manufacture every product in our own facilities. No middlemen, no inconsistent quality — direct from our factory to your facility.
-          </p>
+          <h3 style="font-weight:700;margin-bottom:var(--space-2);">No middlemen</h3>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.6;">Your order goes from our production line to your facility. One invoice, one shipment, zero markup.</p>
         </div>
-        <div class="value-card">
-          <div class="value-card__icon">
-            <i class="ph ph-headset"></i>
+        <div style="text-align:center;padding:var(--space-8);">
+          <div style="width:64px;height:64px;border-radius:50%;background:var(--color-accent-muted);display:flex;align-items:center;justify-content:center;margin:0 auto var(--space-4);">
+            <i class="ph ph-check-circle" style="font-size:1.75rem;color:var(--color-accent);"></i>
           </div>
-          <h3 class="value-card__title">Dedicated B2B support</h3>
-          <p class="value-card__desc">
-            Every account gets a dedicated support manager. Bulk pricing, staff training materials, installation guidance, and 24/7 technical assistance.
-          </p>
+          <h3 style="font-weight:700;margin-bottom:var(--space-2);">Consistent quality</h3>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.6;">Every product is built to the same spec, every time. You'll never get a different batch from a different factory.</p>
         </div>
-        <div class="value-card">
-          <div class="value-card__icon">
-            <i class="ph ph-package"></i>
+        <div style="text-align:center;padding:var(--space-8);">
+          <div style="width:64px;height:64px;border-radius:50%;background:var(--color-info-bg);display:flex;align-items:center;justify-content:center;margin:0 auto var(--space-4);">
+            <i class="ph ph-chat-circle-text" style="font-size:1.75rem;color:var(--color-info);"></i>
           </div>
-          <h3 class="value-card__title">Factory-direct pricing</h3>
-          <p class="value-card__desc">
-            Buy direct from our manufacturing partner. No traders, no markup — competitive bulk pricing with flexible MOQ and export support.
-          </p>
+          <h3 style="font-weight:700;margin-bottom:var(--space-2);">Direct communication</h3>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.6;">Talk directly to the production team. No agents, no translators, no lost-in-translation delays.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ====== LATEST BLOG POSTS ====== -->
-  <section class="section" style="background: var(--color-surface-alt); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
-    <div class="container">
-      <div style="display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: var(--space-12);" class="reveal">
-        <div>
-          <h2 style="margin-bottom: var(--space-2);">Insights & resources</h2>
-          <p style="color: var(--color-text-muted);">Expert guidance on elderly care equipment and facility safety.</p>
-        </div>
-        <a href="blog.html" class="btn btn--outline" style="display: none; md:display: inline-flex;">View all articles</a>
-      </div>
-
-      <div class="grid grid--3 grid--gap-lg reveal-stagger">
-        <div class="blog-card">
-          <div class="blog-card__image">
-            <img src="assets/images/products/cane/cane-hero.webp" alt="Walking cane procurement guide">
-          </div>
-          <div class="blog-card__body">
-            <div class="blog-card__meta">
-              <span class="blog-card__tag">Product Guide</span>
-              <span class="blog-card__date">June 9, 2026</span>
-            </div>
-            <h3 class="blog-card__title">Choosing the right walking cane: a guide for care facility procurement</h3>
-            <p class="blog-card__excerpt">Not all canes are created equal. From quad canes to single-point, aluminum to steel — here is what matters when buying walking aids for nursing homes.</p>
-            <a href="blog/smart-cane-guide.html" class="blog-card__link">
-              Read article <i class="ph ph-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="blog-card">
-          <div class="blog-card__image">
-            <img src="assets/images/products/grab bar/gb-01.webp" alt="304 stainless steel knurled grab bar">
-          </div>
-          <div class="blog-card__body">
-            <div class="blog-card__meta">
-              <span class="blog-card__tag">Buying Guide</span>
-              <span class="blog-card__date">June 4, 2026</span>
-            </div>
-            <h3 class="blog-card__title">Commercial grab bars: a practical procurement guide for facility managers</h3>
-            <p class="blog-card__excerpt">Not all grab bars are created equal. A practical guide covering weight ratings, materials, grip surfaces, and the questions to ask suppliers before purchasing.</p>
-            <a href="blog/grab-bars-selection.html" class="blog-card__link">
-              Read article <i class="ph ph-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="blog-card">
-          <div class="blog-card__image">
-            <img src="assets/images/products/transfer/td-hero.avif" alt="Hydraulic patient transfer chair">
-          </div>
-          <div class="blog-card__body">
-            <div class="blog-card__meta">
-              <span class="blog-card__tag">Industry Insight</span>
-              <span class="blog-card__date">April 28, 2026</span>
-            </div>
-            <h3 class="blog-card__title">The ROI of safe patient handling: why transfer devices pay for themselves</h3>
-            <p class="blog-card__excerpt">Caregiver injury costs facilities billions annually. A single transfer device can prevent multiple workplace injuries — here is the financial case.</p>
-            <a href="blog/transfer-device-benefits.html" class="blog-card__link">
-              Read article <i class="ph ph-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div style="text-align: center; margin-top: var(--space-10);" class="reveal">
-        <a href="blog.html" class="btn btn--outline">View all articles <i class="ph ph-arrow-right"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== TESTIMONIALS ====== -->
+  <!-- ====== HOW IT WORKS ====== -->
   <section class="section">
     <div class="container">
-      <div style="text-align: center; margin-bottom: var(--space-12);" class="reveal">
-        <h2 style="margin-bottom: var(--space-4);">What our partners say</h2>
+      <div style="text-align:center;margin-bottom:var(--space-12);" class="reveal">
+        <h2 style="margin-bottom:var(--space-4);">From inquiry to delivery in 3 steps</h2>
       </div>
-
-      <div class="grid grid--3 grid--gap-lg reveal-stagger">
-        <div class="testimonial">
-          <p class="testimonial__quote">
-            The smart canes have been a game-changer for our fall response protocol. We saw a 40% reduction in serious fall incidents within the first six months.
-          </p>
-          <p class="testimonial__author">Dr. Sarah Chen</p>
-          <p class="testimonial__role">Director of Nursing, Sunrise Senior Living</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-6);max-width:840px;margin-inline:auto;" class="reveal-stagger">
+        <div style="text-align:center;padding:var(--space-6);">
+          <div style="width:56px;height:56px;border-radius:50%;background:var(--color-primary-muted);display:flex;align-items:center;justify-content:center;margin:0 auto var(--space-4);">
+            <span style="font-family:'Sora',sans-serif;font-weight:700;font-size:var(--text-xl);color:var(--color-primary);">1</span>
+          </div>
+          <h3 style="font-weight:700;font-size:var(--text-base);margin-bottom:var(--space-2);">Tell us what you need</h3>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.5;">Fill the form with your product selection, quantities, and destination. We'll confirm specs and pricing within one business day.</p>
         </div>
-        <div class="testimonial">
-          <p class="testimonial__quote">
-            We outfitted all 12 of our facilities with EmpCaring grab bars. The installation was straightforward, and the knurled grip has held up beautifully after two years of heavy daily use across hundreds of bathrooms.
-          </p>
-          <p class="testimonial__author">Marcus Rivera</p>
-          <p class="testimonial__role">Facilities Manager, Harbor Healthcare Group</p>
+        <div style="text-align:center;padding:var(--space-6);">
+          <div style="width:56px;height:56px;border-radius:50%;background:var(--color-accent-muted);display:flex;align-items:center;justify-content:center;margin:0 auto var(--space-4);">
+            <span style="font-family:'Sora',sans-serif;font-weight:700;font-size:var(--text-xl);color:var(--color-accent);">2</span>
+          </div>
+          <h3 style="font-weight:700;font-size:var(--text-base);margin-bottom:var(--space-2);">Approve your sample</h3>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.5;">We'll ship samples so you can inspect quality firsthand. Once approved, production begins immediately.</p>
         </div>
-        <div class="testimonial">
-          <p class="testimonial__quote">
-            The transfer devices reduced our staff injury claims by over 60%. The one-caregiver operation is exactly what our smaller facilities needed. The support team was exceptional throughout the rollout.
-          </p>
-          <p class="testimonial__author">Linda Okonkwo</p>
-          <p class="testimonial__role">Procurement Director, Maple Care Network</p>
+        <div style="text-align:center;padding:var(--space-6);">
+          <div style="width:56px;height:56px;border-radius:50%;background:var(--color-info-bg);display:flex;align-items:center;justify-content:center;margin:0 auto var(--space-4);">
+            <span style="font-family:'Sora',sans-serif;font-weight:700;font-size:var(--text-xl);color:var(--color-info);">3</span>
+          </div>
+          <h3 style="font-weight:700;font-size:var(--text-base);margin-bottom:var(--space-2);">We ship, you receive</h3>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.5;">Export packaging, customs documentation, and logistics — handled. Your order arrives at your facility on schedule.</p>
         </div>
+      </div>
+      <div style="text-align:center;margin-top:var(--space-10);" class="reveal">
+        <a href="contact.html" class="btn btn--primary btn--lg">Start Your Inquiry Now <i class="ph ph-arrow-right"></i></a>
       </div>
     </div>
   </section>
 
   <!-- ====== FINAL CTA ====== -->
-  <section class="section">
-    <div class="container">
-      <div class="cta-section reveal">
-        <h2 class="cta-section__title">Ready to upgrade your facility's safety standards?</h2>
-        <p class="cta-section__text">
-          Contact our B2B sales team to discuss volume pricing, request product samples, or schedule a demo for your procurement team.
-        </p>
-        <div class="cta-section__actions">
-          <a href="contact.html" class="btn btn--primary btn--lg">Get a Quote</a>
-          <a href="products.html" class="btn btn--outline btn--lg">Browse Products</a>
-        </div>
-      </div>
+  <section class="section" style="background:var(--color-primary-dark);">
+    <div class="container" style="text-align:center;padding:var(--space-16) 0;">
+      <h2 style="font-family:'Sora',sans-serif;font-size:var(--text-3xl);font-weight:700;color:#fff;margin-bottom:var(--space-4);">Ready to equip your facility at factory prices?</h2>
+      <p style="color:rgba(255,255,255,0.7);margin-bottom:var(--space-8);max-width:520px;margin-inline:auto;font-size:var(--text-lg);">Tell us what products and quantities you're looking for. We'll send a detailed quote within one business day — no obligation.</p>
+      <a href="contact.html" class="btn btn--lg" style="background:var(--color-accent);color:var(--color-primary-dark);font-weight:700;font-size:var(--text-base);padding:var(--space-3) var(--space-10);">Get Your Factory Quote <i class="ph ph-arrow-right"></i></a>
     </div>
   </section>
 
 </main>
-
-<!-- ====== FOOTER ====== -->
 <footer class="site-footer" role="contentinfo">
   <div class="footer__grid">
     <div class="footer__brand">
